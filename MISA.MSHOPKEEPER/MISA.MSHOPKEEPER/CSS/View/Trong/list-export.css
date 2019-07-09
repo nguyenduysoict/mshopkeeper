@@ -1,0 +1,102 @@
+﻿
+/*css bảng danh sách nhân viên*/
+.table-bordered > thead > tr > th {
+    border: 1px solid #ddd;
+}
+
+.tbl-list-export {
+    overflow-y: scroll;
+    height: 220px;
+}
+
+.table-list-export thead tr:first-child th {
+    position: sticky;
+    top: -1px;
+    background-color: #ddd;
+}
+
+.table-list-export thead tr:last-child th {
+    position: sticky;
+    top: 35px;
+    background-color: white;
+}
+
+.tbl-list-export table {
+    margin-bottom: 0px !important;
+    border-bottom: 1px solid #ddd;
+}
+
+    .tbl-list-export table thead {
+        background-color: #F5F5F5;
+    }
+
+.check-export {
+    width: 32px;
+}
+
+.th-text {
+    text-align: center;
+}
+
+.td-text {
+    text-align: left;
+}
+
+.td-date {
+    text-align: center;
+}
+
+.td-number {
+    text-align: right;
+}
+
+.th-no-padding {
+    padding: 0px !important;
+}
+
+.icon-input {
+    display: flex;
+}
+
+.background-icon {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    cursor: pointer;
+}
+
+    .background-icon:hover {
+        border: 1px solid #337ab7;
+        border-radius: 3px;
+    }
+
+.icon-search {
+    background: url('/Content/Icons/common-icon.png') -345px 6px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+.icon-date {
+    background: url('/Content/Icons/common-icon.png') -318px 6px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+.icon-input input {
+    width: 100%;
+    border: none;
+    height: 30px;
+    padding-left: 5px;
+}
+
+.select {
+    width: 100%;
+    border: none;
+    height: 30px;
+}
+
+.th-check-export {
+    padding-bottom: 18px !important;
+}

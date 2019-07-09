@@ -1,0 +1,27 @@
+﻿
+/*css bảng chi tiết nhân viên*/
+.detail-export-text {
+    color: gray;
+    background-color: white;
+    height: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.detail-export-text div {
+    width: 75px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #337ab7;
+}
+
+.detail-export {
+    background-color: white;
+    height: calc(100% - 460px)
+}
+
+.detail-export table thead {
+    background-color: #F5F5F5;
+}

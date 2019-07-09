@@ -1,0 +1,82 @@
+﻿.pagination-table {
+    padding-left: 8px;
+    padding-top: 8px;
+    background-color: white;
+    height: 38px;
+    width: 100%;
+    border-left: 1px solid #ddd;
+    display: flex;
+}
+
+.icon-pagination {
+    width: 26px;
+    height: 26px;
+    border: 1px solid #026b97;
+    border-radius: 3px;
+    margin-right: 8px;
+    background-image: url('/Content/Icons/common-icon.png');
+}
+
+.input-pagination {
+    width: 36px;
+    height: 26px;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.text-pagination {
+    padding-top: 4px;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
+.icon-pagination:hover {
+    cursor: pointer;
+}
+
+.icon-double-left {
+    background-position: -649px -123px;
+}
+
+.icon-left {
+    background-position: -699px -123px;
+}
+
+.icon-double-right {
+    background-position: -748px -123px;
+}
+
+.icon-right {
+    background-position: -798px -123px;
+}
+
+.icon-refesh-pagination {
+    background-position: -848px -123px;
+}
+
+span.text-pagination.result-pagination {
+    position: absolute;
+    right: 15px;
+}
+
+.select-main-pagination {
+    width: 46px;
+    height: 26px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+    .select-main-pagination select {
+        width: 40px;
+        border: 1px solid white;
+        padding-top: 2px;
+    }
+
+        .select-main-pagination select option:focus {
+            outline: 0;
+        }
+
+        .select-main-pagination select::-ms-expand {
+            display: none;
+        }

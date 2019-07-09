@@ -1,0 +1,81 @@
+﻿.get-data {
+    height: 60px;
+    background-color: white;
+    border-left: 2px solid #ddd;
+    display: flex;
+}
+
+.cb-getdata {
+    height: 33px;
+    width: 115px;
+    border: 1px solid #ddd;
+    margin-left: 10px;
+    border-radius: 3px;
+    margin-top: 10px;
+    display: flex;
+}
+
+select.select-get-data {
+    border: 1px solid white;
+    margin-left: 3px;
+}
+
+    select.select-get-data:focus {
+        outline: 0;
+    }
+
+.from-text-getdata {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.to-text-getdata {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.input-get-data {
+    width: 90px;
+    border: 1px solid white;
+    padding-left: 8px;
+    margin-left: 1px;
+}
+
+img.ui-datepicker-trigger {
+    width: 16px;
+    height: 16px;
+    margin-top: 7px;
+    background-image: url(/Content/Icons/common-icon.png);
+    margin-right: 2px;
+    background-position: -1px -177px;
+}
+
+    img.ui-datepicker-trigger:hover {
+        cursor: pointer;
+    }
+
+.btn-get-data {
+    background-color: white;
+    border: 1px solid #026b97;
+}
+
+.icon-get-data {
+    width: 16px;
+    height: 16px;
+    background-image: url(/Content/Icons/common-icon.png);
+    background-position: -600px -126px;
+    margin-left: 5px;
+    margin-right: 8px;
+}
+
+.text-get-data {
+    color: #026b97;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}

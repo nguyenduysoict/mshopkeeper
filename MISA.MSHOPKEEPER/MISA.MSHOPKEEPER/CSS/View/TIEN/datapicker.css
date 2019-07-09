@@ -1,0 +1,12 @@
+﻿li.ui-timepicker-am.ui-timepicker-selected {
+    color: #fff;
+    background: #5fa2dd !important;
+}
+
+li.ui-timepicker-selected, .ui-timepicker-list li:hover, .ui-timepicker-list .ui-timepicker-selected:hover {
+    background: #026b97;
+    color: #fff;
+}
+li.ui-timepicker-am:hover li.ui-timepicker-am.ui-timepicker-selected{
+    color: #fff !important;
+}

@@ -1,0 +1,321 @@
+﻿/* css dialog thêm mới phiếu xuất kho*/
+.ui-dialog {
+    padding: 1px;
+} 
+
+.dialog-add-new {
+    padding: 0px !important;
+}
+
+/*css phần toolbar của dialog*/
+.dialog-toolbar {
+    background-color: #026b97;
+    width: 100%;
+    height: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.btn-toolbar-dialog {
+    background: none;
+    height: 100%;
+    padding: 2px 10px;
+    color: #F5F5F5;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+.icon-dialog {
+    width: 16px;
+    height: 16px;
+    margin: 0px 5px;
+}
+
+.icon-arrow-left {
+    background: url('/Content/Icons/common-icon.png') no-repeat -475px -127px;
+}
+
+.icon-dialog-caret {
+
+}
+
+.icon-arrow-right {
+    background: url('/Content/Icons/common-icon.png') no-repeat -425px -127px;
+}
+
+.icon-dialog-add {
+    background: url('/Content/Icons/common-icon.png') no-repeat -1px -127px;
+}
+
+.icon-dialog-edit {
+    background: url('/Content/Icons/common-icon.png') no-repeat -77px -203px;
+}
+
+.icon-dialog-save {
+    background: url('/Content/Icons/common-icon.png') no-repeat -325px -127px;
+}
+
+.icon-dialog-delete {
+    background: url('/Content/Icons/common-icon.png') no-repeat -1076px -127px;
+}
+
+.icon-dialog-delay {
+    background: url('/Content/Icons/common-icon.png') no-repeat -1401px -127px;
+}
+
+.icon-dialog-print {
+    background: url('/Content/Icons/common-icon.png') no-repeat -227px -127px;
+}
+
+.icon-dialog-help {
+    background: url('/Content/Icons/common-icon.png') no-repeat -176px -202px;
+}
+
+.icon-dialog-close {
+    background: url('/Content/Icons/common-icon.png') no-repeat -275px -127px
+}
+
+/*css phần nội dung của dialog*/
+.purpose-export {
+    height: 45px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.purpose-export-text {
+    padding: 0px 15px;
+}
+
+.purpose-export form {
+    padding: 0px 5px;
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.purpose-export form div {
+    display: flex;
+}
+
+.purpose-export form input {
+    margin-right: 5px;
+}
+
+.purpose-export select {
+    height: 30px;
+    width: 210px;
+    margin-left: 5px;
+}
+
+/*css phần thông tin chung và phần chứng từ*/
+.dialog-information-voucher {
+    height: 198px;
+    /*background-color: gray;*/
+    margin: 0px 10px;
+    display: flex;
+    /*align-items: center;*/
+}
+
+/*css phần thông tin chung*/
+.dialog-general-information > :first-child {
+    font: 600 15px Roboto !important;
+    color: #757575;
+    text-transform: uppercase;
+    padding: 4px 0;
+    margin: 5px 5px 0px 5px;
+}
+
+.general-information-text {
+    margin-left: 15px;
+    width: 100px;
+}
+
+.object-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+}
+
+.deliver-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+}
+
+.description-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+}
+
+.reference-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+}
+
+.div-input-infomation {
+    display: flex;
+    height: 35px;
+    width: 660px;
+}
+
+.div-input-infomation input {
+    width: 100%;
+    height: 100%;
+}
+
+.div-input-infomation > div:first-child {
+    width: 220px;
+    border: 1px solid #d0d0d0;
+    border-radius: 3px;
+}
+
+.div-input-infomation input {
+    border: none;
+    padding: 0px 5px;
+}
+
+.div-input-infomation > div:last-child {
+    width: 100%;
+    margin-left: 5px;
+    border: 1px solid #d0d0d0;
+    border-radius: 3px;
+}
+
+.div-input-deliver, .div-input-description, .div-input-reference {
+    border: 1px solid #d0d0d0;
+    border-radius: 3px;
+}
+
+/*css phần chứng từ*/
+
+.dialog-voucher {
+    padding-left: 10px;
+}
+
+    .dialog-voucher > :first-child {
+        font: 600 15px Roboto !important;
+        color: #757575;
+        text-transform: uppercase;
+        padding: 4px 0;
+        margin: 5px 5px 0px 5px;
+    }
+
+.export-number, .export-date, .export-hour {
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+}
+
+.voucher-text {
+    width: 100px;
+    margin-left: 15px;
+}
+
+.div-input-voucher {
+    height: 35px;
+    width: 126px;
+    border: 1px solid #d0d0d0;
+    border-radius: 3px;
+}
+
+.div-input-voucher input {
+    border: none;
+    width: 100%;
+}
+
+/*css phần bảng chi tiết trong dialog*/
+.dialog-table-detail {
+    margin: 0px 15px;
+    height: 275px;
+    display: flex;
+    flex-direction: column;
+}
+
+    .dialog-table-detail > div:first-child {
+        font: 600 15px Roboto !important;
+        color: #757575;
+        text-transform: uppercase;
+        padding: 4px 0;
+        margin: 6px 0px 2px 0px;
+    }
+
+.dialog-table-detail table thead {
+    background-color: #f0f0f0 !important;
+}
+
+    .dialog-table-detail table thead tr th {
+        border-right: 1px solid #d0d0d0;
+    }
+
+.td-item-name {
+    background-color: #f0f0f0;
+}
+
+.div-empty {
+    flex-grow: 1;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.total-result {
+    height: 37px;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+}
+
+.col-delete {
+    width: 49px;
+    border-right: 1px solid #ccc;
+    height: 100%;
+}
+
+.into-money {
+    width: 109px;
+    border-right: 1px solid #ccc;
+    height: 100%;
+}
+
+.unit-price {
+    width: 109px;
+    border-right: 1px solid #ccc;
+    height: 100%;
+}
+
+.amount {
+    width: 99px;
+    border-right: 1px solid #ccc;
+    height: 100%;
+}
+
+.unit {
+    width: 84px;
+    border-right: 1px solid #ccc;
+    height: 100%;
+}
+
+.warehouse {
+    width: 149px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 1px solid #ccc;
+    height: 100%;
+}
+
+.item-name {
+    width: 257px;
+    border-right: 1px solid #ccc;
+    height: 100%;
+}
+
+.sku-code {
+    width: 159px;
+    border-right: 1px solid #ccc;
+    height: 100%;
+}

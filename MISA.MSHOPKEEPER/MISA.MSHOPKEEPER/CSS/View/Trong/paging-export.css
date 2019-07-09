@@ -1,0 +1,57 @@
+﻿
+/*css phần phân trang của bảng danh sách nhân viên*/
+.paging-list-export {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 2px 8px;
+    height: 35px;
+}
+
+.paging {
+    display: flex;
+    align-items: center;
+}
+
+.icon-paging {
+    height: 22px;
+    width: 22px;
+    border: 1px solid #337ab7;
+    border-radius: 3px;
+    margin: 0px 1px;
+}
+
+.icon-first-page {
+    background: url('/Content/Icons/common-icon.png') -649px 366px;
+}
+
+.icon-previous-page {
+    background: url(/Content/Icons/common-icon.png) -700px 366px;
+}
+
+.icon-next-page {
+    background: url(/Content/Icons/common-icon.png) -749px 366px;
+}
+
+.icon-end-page {
+    background: url(/Content/Icons/common-icon.png) -798px 366px;
+}
+
+.icon-refresh-page {
+    background: url(/Content/Icons/common-icon.png) -848px 366px;
+    margin: 0px 6px;
+}
+
+.current-page input {
+    width: 30px;
+    height: 26px;
+}
+
+.records {
+    margin-left: 5px;
+}
+
+.current-page {
+    margin: 0px 4px;
+}

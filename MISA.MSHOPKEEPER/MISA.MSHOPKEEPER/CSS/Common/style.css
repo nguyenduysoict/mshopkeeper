@@ -1,0 +1,288 @@
+﻿
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto',Tahoma,sans-serif;
+}
+/*
+    ---header---
+*/
+.header {
+    height: 52px;
+}
+/**
+    Description: Css của header
+    CreateBy: NVTIEN
+    CreateDate:27/06/2019
+
+*/
+
+.logo-header {
+    width: 140px;
+    background-color: #006189;
+    color: #fff;
+    text-align: center;
+    padding-top: 13px;
+}
+
+
+.info-header {
+    width: calc(100% - 140px);
+    display: flex;
+}
+
+
+
+.name-title-header {
+    min-width: 117px;
+    width: 145px;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+    .name-title-header span {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+.user-header {
+    width: 1515px;
+    display: flex;
+    /* border-right: 1px solid black; */
+    height: 100%;
+}
+
+.user-login-header {
+    /* width: 100%; */
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.username-header {
+    width: 162px;
+    height: 32px;
+    display: flex;
+    background-color: #fff;
+    /*border: 1px solid #c3c3c3;*/
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 32px;
+    margin-right: 15px;
+}
+
+.name-login-header {
+    display: flex;
+    width: 191px;
+    height: 32px;
+    background-color: #fff;
+    /* border: 1px solid #c3c3c3; */
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    font-size: 13px;
+    font-weight: 300;
+    user-select: none;
+}
+
+#img-login-header {
+    width: 28px;
+    height: 28px;
+}
+
+.username-header span {
+    margin-left: 0;
+    margin-right: 30px;
+}
+
+img#img-login-header {
+    margin: 0 3px 0 0;
+}
+
+#one-user-header {
+    padding: 8px 11px 0 5px;
+}
+/*.phone-header {
+    width: 46px;
+    background-image: url('/Content/Images/misasupport_1.png');
+    background-color:#07f;
+    background-repeat:no-repeat;
+}*/
+
+.help-header {
+    padding-top: 15px;
+    /* margin-left: 15px; */
+}
+
+.text-help-header {
+    color: #027488;
+}
+
+i.fa.fa-chevron-down.down-login-header {
+    padding-top: 8px;
+}
+
+.name-login-header:hover {
+    cursor: pointer;
+}
+
+.menu-login-header {
+    margin: 0;
+    padding: 0px;
+    position: absolute;
+    right: 0px;
+    top: 32px;
+    background: white;
+    border: 1px solid #ccc;
+    z-index: 1;
+    width: 191px;
+    display: none;
+}
+
+    .menu-login-header li {
+        list-style: none;
+        line-height: 32px;
+        padding-left: 35px;
+    }
+
+        .menu-login-header li a {
+            color: black;
+            text-decoration: none;
+        }
+/**
+    Description: CSS menu
+    CreateBy: NXHUNG
+    CreateDate: 27/06/2019
+
+
+*/
+/*
+    ---menu-left---
+*/
+.menu {
+    width: 140px;
+    position: absolute;
+    top: 52px;
+    bottom: 0;
+    left: 0;
+    overflow-y: scroll;
+}
+
+    .menu::-webkit-scrollbar {
+        width: 3px;
+    }
+
+    .menu::-webkit-scrollbar-track {
+        background: #026b97;
+    }
+
+
+    .menu::-webkit-scrollbar-thumb {
+        background: #888;
+    }
+
+
+        .menu::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+/*
+    Description: Css cho menu-left
+    Create by: NXHUNG(27/06/2019)
+*/
+
+.menu {
+    background-color: #026b97 !important;
+}
+
+.center-content-menu {
+    height: auto;
+    overflow-x: hidden;
+}
+
+.bottom-content-menu {
+    border-top: 1px solid #004765 !important;
+}
+
+.item-menu {
+    display: block;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 14px 0;
+}
+
+    .item-menu:hover {
+        background: #004765;
+        cursor: pointer;
+    }
+
+.menu-icon {
+    margin: auto;
+    height: 26px;
+    width: 26px;
+    background: url('/Content/Images/slibarmenu.png') no-repeat;
+}
+
+.icon-overview {
+    background-position: -29px 0px;
+}
+
+.icon-buy {
+    background-position: -29px -41px;
+}
+
+.icon-treasury {
+    background-position: -29px -79px;
+}
+
+.icon-money {
+    background-position: -29px -120px;
+}
+
+.icon-cost {
+    background-position: -29px -162px;
+}
+
+.icon-promotional {
+    background-position: -29px -200px;
+}
+
+.icon-catalog {
+    background-position: -29px -239px;
+}
+
+.icon-report {
+    background-position: -29px -279px;
+}
+
+.icon-set {
+    background-position: -29px -320px;
+}
+
+.icon-goods {
+    background-position: -29px -355px;
+}
+
+a.item-menu {
+    text-decoration: none;
+}
+
+    a.item-menu:hover {
+        color: #fff;
+    }
+
+/*
+    ---content---
+*/
+.content {
+    position: absolute;
+    border-top: 1px solid #e5e6eb !important;
+    background-color: #e5e6eb;
+    right: 0px;
+    top: 52px;
+    bottom: 0px;
+    width: calc(100% - 140px);
+}

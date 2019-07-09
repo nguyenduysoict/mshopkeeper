@@ -1,0 +1,543 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Mshopkeeper</title>
+
+    <!-- Link CSS -->
+    <link href="/CSS/Library/bootstrap.css" rel="stylesheet" />
+    <link href="/CSS/Library/jquery-ui.css" rel="stylesheet" />
+    <link href="/CSS/Common/style.css" rel="stylesheet" />
+    <link href="/CSS/View/Hung/common.css" rel="stylesheet" />
+    <link href="/CSS/View/Hung/toolbar.css" rel="stylesheet" />
+    <link href="/CSS/View/Hung/filterdata.css" rel="stylesheet" />
+    <link href="/CSS/View/Hung/grid.css" rel="stylesheet" />
+    <link href="/CSS/View/Hung/griddetail.css" rel="stylesheet" />
+    <link href="/CSS/View/Hung/pagination.css" rel="stylesheet" />
+    <link href="/CSS/View/Hung/dialog.css" rel="stylesheet" />
+
+    <!--fontawesome-->
+    <link href="/CSS/Library/font-awesome/css/font-awesome.css" rel="stylesheet" />
+</head>
+<body>
+
+    <!-- Header -->
+
+    <div class="header" style="display:flex">
+        <div class="logo-header">
+            <img src="/Content/Images/logo-mshopkeeper.png" />
+        </div>
+        <div class="info-header">
+            <div class="name-title-header">
+                <span>Thu, chi tiền mặt</span>
+            </div>
+            <div class="user-header">
+                <div class="help-header">
+
+                    <img src="/Content/Images/icon_help_18.png" class="img-help-header" />
+                    <span class="text-help-header">Trợ giúp</span>
+                </div>
+
+                <div class="user-login-header">
+                    <div class="username-header">
+                        <span>Tất cả các chi nhánh</span>
+                        <i class="fa fa-chevron-down down-login-header"></i>
+                    </div>
+                    <div class="name-login-header">
+                        <img src="/Content/Images/Image.jpg" id="img-login-header" />
+                        <span id="one-user-header">Nguyễn Xuân Hưng</span>
+                        <i class="fa fa-chevron-down down-login-header"></i>
+
+                        <ul class="menu-login-header">
+                            <li> <a href="#">Thông tin tài khoản</a></li>
+                            <li> <a href="#">Đổi mật khẩu</a></li>
+                            <li> <a href="#">Đăng xuất</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end header -->
+    <!--menu-->
+
+    <div class="menu">
+        <div class="center-content-menu">
+            <a class="item-menu">
+                <div class="menu-icon icon-overview"></div>
+                <div>Tổng quan</div>
+            </a>
+            <a class="item-menu">
+                <div class="menu-icon icon-buy"></div>
+                <div>Mua hàng</div>
+            </a>
+            <a class="item-menu">
+                <div class="menu-icon icon-treasury"></div>
+                <div>Kho</div>
+            </a>
+            <a class="item-menu">
+                <div class="menu-icon icon-money"></div>
+                <div>Quỹ tiền</div>
+            </a>
+            <a class="item-menu">
+                <div class="menu-icon icon-cost"></div>
+                <div>Chi phí</div>
+            </a>
+            <a class="item-menu">
+                <div class="menu-icon icon-promotional"></div>
+                <div>Khuyến mãi</div>
+            </a>
+            <a class="item-menu">
+                <div class="menu-icon icon-catalog"></div>
+                <div>Danh mục</div>
+            </a>
+            <a class="item-menu">
+                <div class="menu-icon icon-report"></div>
+                <div>Báo cáo</div>
+            </a>
+            <a class="item-menu">
+                <div class="menu-icon icon-set"></div>
+                <div>Thiết lập</div>
+            </a>
+        </div>
+        <div class="bottom-content-menu">
+            <a class="item-menu">
+                <div class="menu-icon icon-goods"></div>
+                <div>Hàng hóa</div>
+            </a>
+        </div>
+    </div>
+
+    <!--end menu-->
+    <!--content-->
+
+    <div class="content">
+        <div class="content-grid">
+            <!--tool bar-->
+            <div class="toolbar">
+                <button id="btnAdd" class="toolbar-btn-item" title="Ctrl+Alt+N">
+                    <div class="btn-icon btn-icon-add"></div>
+                    <span class="btn-text">Thêm mới</span>
+                    <i class="fa fa-caret-down icon-dropdown"></i>
+                </button>
+
+                <ul class="cb-addnew">
+                    <li class="a-pay">Phiếu chi tiền</li>
+                    <li>Phiếu thu tiền</li>
+                </ul>
+                <button id="btnRefesh" class="toolbar-btn-item">
+                    <div class="btn-icon btn-icon-view">
+                    </div>
+                    <span class="btn-text">Xem</span>
+                </button>
+
+
+                <button id="btnEdit" class="toolbar-btn-item" title="Ctrl  + E">
+                    <div class="btn-icon btn-icon-edit">
+                    </div>
+                    <span class="btn-text">Sửa</span>
+                </button>
+
+                <button id="btnDuplicate" class="toolbar-btn-item" title="Ctrl + C">
+                    <div class="btn-icon btn-icon-duplicate">
+                    </div>
+                    <span class="btn-text">Nhân bản</span>
+                </button>
+
+                <button id="btnDelete" class="toolbar-btn-item" title="Ctrl  + D">
+                    <div class="btn-icon btn-icon-delete">
+                    </div>
+                    <span class="btn-text">Xóa</span>
+                </button>
+
+            </div>
+
+            <!--filter-data-->
+            <div class="filter-date">
+                <div class="cb-date">
+                    <select>
+                        <option>Hôm nay</option>
+                        <option>Hôm qua</option>
+                        <option>Tuần này</option>
+                        <option>Tuần trước</option>
+                        <option>Tháng này</option>
+                        <option>Tháng trước</option>
+                        <option>Quý này</option>
+                        <option>Quý trước</option>
+                        <option>6 tháng trước</option>
+                        <option>Năm nay</option>
+                        <option>Năm trước</option>
+                        <option>Khác</option>
+                    </select>
+                </div>
+                <div class="lbl-filter">Từ</div>
+                <div class="start-date">
+                    <input type="text" class="input-get-data" />
+                </div>
+                <div class="lbl-filter">đến</div>
+                <div class="start-date">
+                    <input type="text" class="input-get-data" />
+                </div>
+                <div class="getdata">
+                    <a href="">Lấy dữ liệu</a>
+                </div>
+            </div>
+            <!-- Grid -->
+            <div class="grid">
+                <div class="divTable">
+                    <div class="divHeading">
+                        <div class="Cell Cell1">
+                            <div class="uncheck text-align-center" id="checkall"></div>
+                        </div>
+                        <div class="Cell Cell2">
+                            <div class="text-th">Ngày</div>
+                            <div class="div-row-input">
+                                <div class="box-filter">
+                                    <div class="icon-filter">=</div>
+                                </div>
+                                <div class="box-input box-input1">
+                                    <input type="text" class="input-date" id="date" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Cell Cell2">
+                            <div class="text-th">Số chứng từ</div>
+                            <div class="div-row-input">
+                                <div class="box-filter">
+                                    <div class="icon-filter">∗</div>
+                                </div>
+                                <div class="box-input box-input2">
+                                    <input type="text" id="vouchercode" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Cell Cell3">
+                            <div class="text-th">Loại chứng từ</div>
+                            <div class="div-row-input">
+                                <div class="box-input box-input3">
+                                    <div>
+                                        <input type="text" id="vouchercategory" />
+                                    </div>
+                                    <div class="fa fa-angle-down dropdown-icon"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Cell Cell4">
+                            <div class="text-th">Tổng tiền</div>
+                            <div class="div-row-input">
+                                <div class="box-filter">
+                                    <div class="icon-filter">∗</div>
+                                </div>
+                                <div class="box-input box-input4">
+                                    <input type="text" id="total" class="text-align-right" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Cell Cell5">
+                            <div class="text-th">Đối tượng</div>
+                            <div class="div-row-input">
+                                <div class="box-filter">
+                                    <div class="icon-filter">∗</div>
+                                </div>
+                                <div class="box-input box-input5">
+                                    <input type="text" id="object" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Cell">
+                            <div class="text-th">Lý do</div>
+                            <div class="div-row-input">
+                                <div class="box-filter">
+                                    <div class="icon-filter">∗</div>
+                                </div>
+                                <div class="box-input box-input6">
+                                    <input type="text" id="reason" />
+                                </div>
+                                <div class="divBorder"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="scroll-body">
+                    <div class="divTable divbody">
+
+                    </div>
+                </div>
+                <div class="divTable">
+                    <div class="Row" id="div-footer">
+                        <div class="Cell Cell1"></div>
+                        <div class="Cell Cell2"></div>
+                        <div class="Cell Cell2"></div>
+                        <div class="Cell Cell3"></div>
+                        <div class="Cell Cell4 text-align-right">145.000.000</div>
+                        <div class="Cell Cell5"></div>
+                        <div class="Cell"></div>
+                    </div>
+                </div>
+                <div class="pagination-table">
+                    <div class="icon-pagination icon-double-left"></div>
+                    <div class="icon-pagination icon-left"></div>
+                    <span class="text-pagination">Trang</span>
+                    <input type="number" min="1" class="input-pagination" />
+                    <span class="text-pagination">trên 1</span>
+                    <div class="icon-pagination icon-double-right"></div>
+                    <div class="icon-pagination icon-right"></div>
+                    <div class="icon-pagination icon-refesh-pagination"></div>
+                    <span class="text-pagination">Số bản ghi</span>
+                    <span class="text-pagination result-pagination">1-15 trong 30 kết quả</span>
+                </div>
+            </div>
+
+            <!--Grid detail-->
+            <div class="grid-detail">
+                <div class="title-grid-detail">
+                    <div class="title">
+                        Chi tiết
+                    </div>
+                </div>
+                <div class="divTable">
+                    <div class="divHeading text-bold">
+                        <div class="Cell Cell7">Diễn giải</div>
+                        <div class="Cell Cell6">Số tiền</div>
+                        <div class="Cell ">Mục thu/Chi</div>
+                    </div>
+                </div>
+                <div class="divBody-grid-detail" style="overflow-y:auto;">
+                    <div class="divTable">
+                        <div class="Row">
+                            <div class="Cell Cell7">Thu nợ khách hàng</div>
+                            <div class="Cell Cell6 text-align-right">22.000.000</div>
+                            <div class="Cell"></div>
+                        </div>
+                        <div class="Row">
+                            <div class="Cell Cell7">Trả nợ nhà sản xuất</div>
+                            <div class="Cell Cell6 text-align-right">22.000.000</div>
+                            <div class="Cell"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="divTable">
+                    <div class="Row" style="background: #ffeeda;font-weight:bold;">
+                        <div class="Cell Cell7"></div>
+                        <div class="Cell Cell6 text-align-right">22.000.000</div>
+                        <div class="Cell "></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--end content-->
+    <!--Dialog-->
+    <div class="dialogPayout" style="display:none;">
+        <div class="content-dialog">
+
+            <div class="toolbar-dialog">
+                <button id="btnbefore" class="toolbar-dialog-item">
+                    <div class="btn-icon icon-before"></div>
+                    <span class="btn-text">Trước</span>
+                    <i class="fa fa-caret-down icon-dropdown"></i>
+                </button>
+                <button id="btnafter" class="toolbar-dialog-item div-border-dialog">
+
+                    <span class="btn-text">Sau</span>
+                    <div class="btn-icon icon-after"></div>
+                    <i class="fa fa-caret-down icon-dropdown"></i>
+                </button>
+                <button id="btnAddNew" class="toolbar-dialog-item">
+                    <div class="btn-icon icon-add"></div>
+                    <span class="btn-text">Thêm mới</span>
+                </button>
+
+                <button id="btnRepair" class="toolbar-dialog-item">
+                    <div class="btn-icon icon-edit">
+                    </div>
+                    <span class="btn-text">Sửa</span>
+                </button>
+                <button id="btnSave" class="toolbar-dialog-item">
+                    <div class="btn-icon icon-save">
+                    </div>
+                    <span class="btn-text">Lưu</span>
+                </button>
+                <button id="btnDelete" class="toolbar-dialog-item">
+                    <div class="btn-icon icon-delete">
+                    </div>
+                    <span class="btn-text">Xóa</span>
+                </button>
+                <button id="btnReturn" class="toolbar-dialog-item div-border-dialog">
+                    <div class="btn-icon icon-return">
+                    </div>
+                    <span class="btn-text">Hoãn</span>
+                </button>
+                <button id="btnPrinter" class="toolbar-dialog-item div-border-dialog">
+                    <div class="btn-icon icon-printer">
+                    </div>
+                    <span class="btn-text">In</span>
+                    <i class="fa fa-caret-down icon-dropdown"></i>
+                </button>
+                <button id="btnDelete" class="toolbar-dialog-item">
+                    <div class="btn-icon icon-help">
+                    </div>
+                    <span class="btn-text">Trợ giúp</span>
+                </button>
+                <button id="btnDelete" class="toolbar-dialog-item">
+                    <div class="btn-icon icon-close">
+                    </div>
+                    <span class="btn-text">Đóng</span>
+                </button>
+            </div>
+            <div class="form-dialog">
+
+                <div class="panel-body-dialog">
+                    <div style="width:120px;"><span>Mục đích chi</span></div>
+                    <div class="btn-icon icon-radio-false cls-other"></div>
+                    <div style="width:95px;margin-top: 2px;">Khác</div>
+                    <div class="btn-icon icon-radio-true cls-pay"></div>
+                    <div style="width:95px;margin-top: 2px;">Trả nợ</div>
+                    <div class="choose-repayment">
+                        <a>Chọn hóa đơn trả nợ</a>
+                    </div>
+                </div>
+
+                <div class="content-form-dialog">
+                    <div class="general-information">
+                        <div class="cls-group-title"> Thông tin chung</div>
+                        <div class="Row-form-dialog">
+                            <div class="lbl-item-general"><span>Đối tượng nhận</span></div>
+                            <div class="input1-form-dialog">
+                                <div>
+                                    <input type="text" id="objDialog" readonly="readonly" />
+                                </div>
+                                <div class="btn-icon-dialog icon-arrow-down">
+                                    <img src="/Content/Icons/arrow-down-line.png" />
+                                </div>
+                                <div class="btn-icon-dialog icon-search">
+                                </div>
+                            </div>
+                            <div class="input2-form-dialog">
+                                <input type="text" readonly="readonly" />
+                            </div>
+                        </div>
+                        <div class="Row-form-dialog">
+                            <div class="lbl-item-general"><span>Người nhận</span></div>
+                            <div class="input3-form-dialog">
+                                <input type="text" readonly />
+                            </div>
+                        </div>
+                        <div class="Row-form-dialog">
+                            <div class="lbl-item-general"><span>Địa chỉ</span></div>
+                            <div class="input3-form-dialog">
+                                <input type="text" readonly />
+                            </div>
+                        </div>
+                        <div class="Row-form-dialog">
+                            <div class="lbl-item-general"><span>Lý do chi</span></div>
+                            <div class="input3-form-dialog">
+                                <input type="text" readonly />
+                            </div>
+                        </div>
+                        <div class="Row-form-dialog">
+                            <div class="lbl-item-general"><span>Nhân viên chi</span></div>
+                            <div class="input1-form-dialog">
+                                <div>
+                                    <input type="text" id="employee" readonly="readonly" />
+                                </div>
+                                <div class="btn-icon-dialog icon-arrow-down">
+                                    <img src="/Content/Icons/arrow-down-line.png" />
+                                </div>
+                                <div class="btn-icon-dialog icon-search">
+                                </div>
+                            </div>
+                            <div class="input2-form-dialog">
+                                <input type="text" readonly="readonly" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="documents">
+                        <div class="cls-group-title">Chứng từ</div>
+                        <div class="Row-form-dialog">
+                            <div class="lbl-item-documents"><span>Số phiếu chi</span></div>
+                            <div class="input4-form-dialog">
+                                <input type="text" />
+                            </div>
+                        </div>
+                        <div class="Row-form-dialog">
+                            <div class="lbl-item-documents"><span>Ngày chi</span></div>
+                            <div class="input5-form-dialog">
+                                <input type="text" class="input-day-spent" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-form-dialog">
+                    <div class="cls-group-title">Chi tiết</div>
+                    <div id="tabs">
+                        <div class="tabbar">
+                            <div class="tab tab-detail border-bottom-texttab"><span>Chi tiết</span></div>
+                            <div class="tab tab-documents"><span>Chứng từ</span></div>
+                        </div>
+                        <div id="tabs-1" class="tabs show-hide ">
+                            <div class="divTable" style="background:#f0f0f0;">
+                                <div class="divHeading">
+                                    <div class="divHeading text-bold">
+                                        <div class="Cell Cell8">Diễn giải</div>
+                                        <div class="Cell Cell9">Số tiền</div>
+                                        <div class="Cell Cell10">Mục chi</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="divBody-dialog-detail">
+
+                            </div>
+                            <div class="divTable" style="background:#f0f0f0;">
+                                <div class="divHeading">
+                                    <div class="divHeading text-bold">
+                                        <div class="Cell Cell8"></div>
+                                        <div class="Cell Cell9 text-align-right">0</div>
+                                        <div class="Cell Cell10"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tabs-2" class="tabs">
+                            <div class="divTable" style="background:#f0f0f0;">
+                                <div class="divHeading">
+                                    <div class="divHeading text-bold">
+                                        <div class="Cell Cell11">Ngày chứng từ</div>
+                                        <div class="Cell Cell12">Số chứng từ</div>
+                                        <div class="Cell Cell13">Số nợ</div>
+                                        <div class="Cell Cell14">Số đã nợ</div>
+                                        <div class="Cell Cell15">Số còn phải trả</div>
+                                        <div class="Cell Cell16">Số trả</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="divBody-dialog-detail">
+
+                            </div>
+                            <div class="divTable" style="background:#f0f0f0;">
+                                <div class="divHeading">
+                                    <div class="divHeading text-bold">
+                                        <div class="Cell Cell11 text-align-center"></div>
+                                        <div class="Cell Cell12"></div>
+                                        <div class="Cell Cell13 text-align-right">0</div>
+                                        <div class="Cell Cell14 text-align-right">0</div>
+                                        <div class="Cell Cell15 text-align-right">0</div>
+                                        <div class="Cell Cell16 text-align-right">0</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="/Scripts/Library/jquery-3.3.1.min.js"></script>
+    <script src="/Scripts/Library/jquery-ui.min.js"></script>
+    <script src="/Scripts/View/Hung/dialog.js"></script>
+    <script src="/Scripts/View/Hung/payout.js"></script>
+</body>
+</html>

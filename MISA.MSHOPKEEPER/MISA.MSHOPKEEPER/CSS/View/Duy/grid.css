@@ -1,0 +1,156 @@
+﻿/*
+    Css cho phần nội dung
+    Author: NXHUNG(3/2/2019)
+*/
+.content-grid {
+    margin: 8px;
+    position: absolute;
+    top: 8px;
+    bottom: 8px;
+    left: 8px;
+    right: 8px;
+}
+.grid {
+    height: calc(100% - 366px);
+    margin-top: 66px;
+    width:100%;
+    position:absolute;
+}
+
+    .grid .cell-item {
+        padding: 6px 7px;
+    }
+
+    .grid::-webkit-scrollbar {
+        width: 0px;
+    }
+
+
+.grid-icon {
+    width: 20px;
+    height: 26px;
+    margin-right: 8px;
+    background-image: url('/Content/Icons/common-icon.png');
+}
+.row-selected {
+    background-color: #d9edf7 !important;
+}
+.checked {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-image: url(/Content/Icons/common-icon.png);
+    background-position: -1px -321px;
+}
+
+.uncheck {
+    width: 16px;
+    height: 16px;
+    background-image: url(/Content/Icons/common-icon.png);
+    background-position: -1px -321px;
+}
+#checkall {
+    position: absolute;
+    top: 23px;
+    left: 10px;
+}
+
+    .Cell1{
+        width:39px;
+        padding:8px 0;
+    }
+    .Cell2{
+        width:149px;
+    }
+    .Cell3{
+        width:253px;
+    }
+    .Cell4{
+        width:199px;
+    }
+    .Cell5{
+        width:478px;
+    }
+.text-th {
+    height: 32px;
+    padding: 7px 10px 6px;
+    font-weight: bold;
+}
+
+.div-row-input{
+    display:flex;
+}
+.icon-filter {
+    height: 16px;
+    width: 16px;
+    margin:7px;
+}
+.box-filter {
+    width: 34px;
+    height: 35px;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+
+
+.dropdown-icon {
+    width: 16px;
+    height: 16px;
+    padding: 4px 13px;
+}
+.box-input {
+    background: #fff;
+    height: 35px;
+    border: 1px solid #ddd;
+    display:flex;
+    width:100%;
+}
+.box-input input{
+    height:33px;
+    padding:0 8px;
+    border:#fff;
+    width:100%;
+}
+
+.box-input6{
+    width:428px !important;
+}
+
+
+input#vouchercategory {
+    width: 218px;
+}
+
+input#date{
+    width:90px;
+}
+
+
+#scroll-body{
+    overflow-y:auto;
+    height:314px;
+}
+#div-footer {
+    background: #ffeeda;
+}
+.divResizable{
+    height:10px;
+    width:100%;
+    background:#fff;
+    border:1px solid #ddd;
+}
+.divBorder {
+    background: #ddd;
+    width: 1px;
+    height: 40px;
+    position: absolute;
+    right: 17px;
+    top: 2px;
+}
+.box-input img.ui-datepicker-trigger {
+    margin: 8px 0;
+}
+.box-input .fa.fa-angle-down.dropdown-icon {
+    margin-top: 6px;
+}

@@ -1,0 +1,10 @@
+﻿.calendar-icon-picker {
+    background: url('../../../Content/Icons/common-icon.png') no-repeat -4px -178px;
+}
+
+.icon-input {
+    width: 13px;
+    height: 14px;
+    margin: auto 0px;
+    padding-left: 20px;
+}

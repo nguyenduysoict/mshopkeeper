@@ -1,0 +1,458 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>TQTrong</title>
+    <link href="/CSS/Library/bootstrap.css" rel="stylesheet" />
+    <link href="../CSS/Library/jquery-ui.css" rel="stylesheet" />
+    <link href="/CSS/Common/style.css" rel="stylesheet" />
+    <link href="/CSS/View/Trong/content-export.css" rel="stylesheet" />
+    <link href="/CSS/View/Trong/list-export.css" rel="stylesheet" />
+    <link href="/CSS/View/Trong/detail-export.css" rel="stylesheet" />
+    <link href="/CSS/View/Trong/paging-export.css" rel="stylesheet" />
+    <link href="/CSS/View/Trong/dialog-add-new.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="header" style="display:flex">
+        <div class="logo-header">
+            <img src="/Content/Images/logo-mshopkeeper.png" />
+        </div>
+        <div class="info-header">
+            <div class="name-title-header">
+                <span>Khách hàng</span>
+            </div>
+            <div class="user-header">
+                <div class="help-header">
+
+                    <img src="/Content/Images/icon_help_18.png" class="img-help-header" />
+                    <span class="text-help-header">Trợ giúp</span>
+                </div>
+                <div class="user-login-header">
+                    <div class="username-header">
+                        <span>Tất cả các chi nhánh</span>
+                    </div>
+                    <div class="name-login-header">
+                        <img src="/Content/Images/Image.jpg" id="img-login-header" />
+                        <span id="one-user-header">Nguyễn Xuân Hưng</span>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="phone-header"> </div>-->
+        </div>
+    </div>
+    <div class="menu">
+        <div class="center-content-menu">
+            <a class="item-menu">
+                <div class="menu-icon icon-overview"></div>
+                <div>Tổng quan</div>
+            </a>
+            <a class="item-menu">
+                <div class="menu-icon icon-buy"></div>
+                <div>Mua hàng</div>
+            </a>
+            <a class="item-menu">
+                <div class="menu-icon icon-treasury"></div>
+                <div>Kho</div>
+            </a>
+            <a class="item-menu">
+                <div class="menu-icon icon-money"></div>
+                <div>Quỹ tiền</div>
+            </a>
+            <a class="item-menu">
+                <div class="menu-icon icon-cost"></div>
+                <div>Chi phí</div>
+            </a>
+            <a class="item-menu">
+                <div class="menu-icon icon-promotional"></div>
+                <div>Khuyến mãi</div>
+            </a>
+            <a class="item-menu">
+                <div class="menu-icon icon-catalog"></div>
+                <div>Danh mục</div>
+            </a>
+            <a class="item-menu">
+                <div class="menu-icon icon-report"></div>
+                <div>Báo cáo</div>
+            </a>
+            <a class="item-menu">
+                <div class="menu-icon icon-set"></div>
+                <div>Thiết lập</div>
+            </a>
+        </div>
+        <div class="bottom-content-menu">
+            <a class="item-menu">
+                <div class="menu-icon icon-goods"></div>
+                <div>Hàng hóa</div>
+            </a>
+        </div>
+    </div>
+    <div class="content">
+        <div class="content-export-top">
+            <div class="toolbar-export">
+                <button class="btn-toolbar-export btn-add-export">
+                    <div class="btn-icon btn-add-icon"></div>
+                    <div class="btn-text">Thêm mới</div>
+                </button>
+                <button class="btn-toolbar-export btn-replication-export">
+                    <div class="btn-icon btn-replication-icon"></div>
+                    <div class="btn-text">Nhân bản</div>
+                </button>
+                <button class="btn-toolbar-export btn-watch-export">
+                    <div class="btn-icon btn-watch-icon"></div>
+                    <div class="btn-text">Xem</div>
+                </button>
+                <button class="btn-toolbar-export btn-edit-export">
+                    <div class="btn-icon btn-edit-icon"></div>
+                    <div class="btn-text">Sửa</div>
+                </button>
+                <button class="btn-toolbar-export btn-delete-export">
+                    <div class="btn-icon btn-delete-icon"></div>
+                    <div class="btn-text">Xóa</div>
+                </button>
+                <button class="btn-toolbar-export btn-print-export">
+                    <div class="btn-icon btn-print-icon"></div>
+                    <div class="btn-text">In</div>
+                </button>
+            </div>
+            <div class="filter-get-data">
+                <div class="select-time">
+                    <select class="div-radius">
+                        <option>Hôm nay</option>
+                        <option>Hôm qua</option>
+                        <option selected>Tuần này</option>
+                        <option>Tuần trước</option>
+                        <option>Tháng này</option>
+                        <option>Tháng trước</option>
+                        <option>Quý này</option>
+                        <option>Quý trước</option>
+                        <option>6 tháng trước</option>
+                        <option>Năm nay</option>
+                        <option>Năm trước</option>
+                        <option>Khác</option>
+                    </select>
+                </div>
+                <div class="date-filer">
+                    <div class="date-from-text">Từ</div>
+                    <div class="div-radius div-date date-from">
+                        <input type="text" class="date-input date-from-input" />
+                        <div class="date-icon date-from-icon"></div>
+                    </div>
+                    <div class="date-to-text">đến</div>
+                    <div class="div-radius div-date date-to">
+                        <input type="text" class="date-input date-to-input" />
+                        <div class="date-icon date-to-icon"></div>
+                    </div>
+                </div>
+                <div class="div-radius get-data">
+                    <div class="get-data-icon"></div>
+                    <div class="get-data-text">Lấy dữ liệu</div>
+                </div>
+            </div>
+            <div class="tbl-list-export">
+                <table class="table table-striped table-bordered table-list-export">
+                    <thead>
+                        <tr>
+                            <th class="th-text">Ngày</th>
+                            <th class="th-text">Số phiếu xuất</th>
+                            <th class="th-text">Đối tượng</th>
+                            <th class="th-text">Tổng tiền</th>
+                            <th class="th-text">Diễn giải</th>
+                            <th class="th-text">Loại chứng từ</th>
+                        </tr>
+                        <tr>
+                            <th class="th-no-padding">
+                                <div class="icon-input">
+                                    <div class="background-icon">
+                                        <div class="icon icon-date"></div>
+                                    </div>
+                                    <input type="text" class="input-date" />
+                                </div>
+                            </th>
+                            <th class="th-no-padding">
+                                <div class="icon-input">
+                                    <div class="background-icon">
+                                        <div class="icon icon-search"></div>
+                                    </div>
+                                    <input type="text" class="search-id" />
+                                </div>
+                            </th>
+                            <th class="th-no-padding">
+                                <div class="icon-input">
+                                    <div class="background-icon">
+                                        <div class="icon icon-search"></div>
+                                    </div>
+                                    <input type="text" class="search-name" />
+                                </div>
+                            </th>
+                            <th class="th-no-padding">
+                                <select class="select select-gender">
+                                    <option value="0">Tất cả</option>
+                                    <option value="1">Nam</option>
+                                    <option value="2">Nữ</option>
+                                </select>
+                            </th>
+                            <th class="th-no-padding">
+                                <div class="icon-input">
+                                    <div class="background-icon">
+                                        <div class="icon icon-search"></div>
+                                    </div>
+                                    <input type="text" />
+                                </div>
+                            </th>
+                            <th class="th-no-padding">
+                                <select class="select">
+                                    <option>Tất cả</option>
+                                    <option>Chính thức</option>
+                                    <option>Thử việc</option>
+                                </select>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="paging-list-export">
+                <div class="paging">
+                    <div class="icon-paging icon-first-page"></div>
+                    <div class="icon-paging icon-previous-page"></div>
+                    <div class="current-page">
+                        <span>Trang</span>
+                        <input type="text" />
+                        <span>trên 1</span>
+                    </div>
+                    <div class="icon-paging icon-next-page"></div>
+                    <div class="icon-paging icon-end-page"></div>
+                    <div class="icon-paging icon-refresh-page"></div>
+                    <div class="records">
+                        <span>Số bản ghi</span>
+                        <select>
+                            <option>5</option>
+                            <option>10</option>
+                            <option>15</option>
+                            <option>20</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="result-paging">1-4 trong 4 kết quả</div>
+            </div>
+        </div>
+        <div class="content-export-bottom">
+            <div class="detail-export-text">
+                <div>Chi tiết</div>
+            </div>
+            <div class="detail-export">
+                <table class="table table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th class="th-text">Mã hàng hóa</th>
+                            <th class="th-text">Tên hàng hóa</th>
+                            <th class="th-text">Kho</th>
+                            <th class="th-text">Đơn vị tính</th>
+                            <th class="th-text">Đơn giá</th>
+                            <th class="th-text">Số lượng</th>
+                            <th class="th-text">Thành tiền</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="td-text">AKK2556971</td>
+                            <td class="td-text">Áo khoác kaki nam</td>
+                            <td class="td-text">Chi nhánh Cầu Giấy</td>
+                            <td class="td-text">Chiếc</td>
+                            <td class="td-number">350.000</td>
+                            <td class="td-number">2</td>
+                            <td class="td-number">700.000</td>
+                        </tr>
+                        <tr>
+                            <td class="td-text">AKK2556971</td>
+                            <td class="td-text">Áo khoác kaki nam</td>
+                            <td class="td-text">Chi nhánh Cầu Giấy</td>
+                            <td class="td-text">Chiếc</td>
+                            <td class="td-number">350.000</td>
+                            <td class="td-number">2</td>
+                            <td class="td-number">700.000</td>
+                        </tr>
+                        <tr>
+                            <td class="td-text">AKK2556971</td>
+                            <td class="td-text">Áo khoác kaki nam</td>
+                            <td class="td-text">Chi nhánh Cầu Giấy</td>
+                            <td class="td-text">Chiếc</td>
+                            <td class="td-number">350.000</td>
+                            <td class="td-number">2</td>
+                            <td class="td-number">700.000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="dialog-add-new">
+        <div class="dialog-toolbar">
+            <button class="btn-toolbar-dialog">
+                <div class="icon-dialog icon-arrow-left"></div>
+                <div>Trước</div>
+                <div class="icon-dialog icon-dialog-caret"></div>
+            </button>
+            <button class="btn-toolbar-dialog">
+                <div>Sau</div>
+                <div class="icon-dialog icon-arrow-right"></div>
+                <div class="icon-dialog icon-dialog-caret"></div>
+            </button>
+            <button class="btn-toolbar-dialog">
+                <div class="icon-dialog icon-dialog-add"></div>
+                <div>Thêm mới</div>
+            </button>
+            <button class="btn-toolbar-dialog">
+                <div class="icon-dialog icon-dialog-edit"></div>
+                <div>Sửa</div>
+            </button>
+            <button class="btn-toolbar-dialog">
+                <div class="icon-dialog icon-dialog-save"></div>
+                <div>Lưu</div>
+            </button>
+            <button class="btn-toolbar-dialog">
+                <div class="icon-dialog icon-dialog-delete"></div>
+                <div>Xóa</div>
+            </button>
+            <button class="btn-toolbar-dialog">
+                <div class="icon-dialog icon-dialog-delay"></div>
+                <div>Hoãn</div>
+            </button>
+            <button class="btn-toolbar-dialog">
+                <div class="icon-dialog icon-dialog-print"></div>
+                <div>In</div>
+                <div class="icon-dialog icon-dialog-caret"></div>
+            </button>
+            <button class="btn-toolbar-dialog">
+                <div class="icon-dialog icon-dialog-help"></div>
+                <div>Trợ giúp</div>
+            </button>
+            <button class="btn-toolbar-dialog">
+                <div class="icon-dialog icon-dialog-close"></div>
+                <div>Đóng</div>
+            </button>
+        </div>
+        <div class="dialog-content">
+            <div class="purpose-export">
+                <div class="purpose-export-text">Mục đích xuất kho</div>
+                <form action="">
+                    <div>
+                        <input type="radio" name="purpose" checked>Khác
+                    </div>
+                    <div>
+                        <input type="radio" name="purpose">Điều chuyển đến cửa hàng khác
+                    </div>
+                </form>
+                <select>
+                    <option>Chi nhánh 1</option>
+                    <option>Chi nhánh 2</option>
+                    <option>Chi nhánh 3</option>
+                </select>
+            </div>
+            <div class="dialog-information-voucher">
+                <div class="dialog-general-information">
+                    <div>THÔNG TIN CHUNG</div>
+                    <div class="object-info">
+                        <div class="general-information-text">Đối tượng</div>
+                        <div class="div-input-infomation">
+                            <div>
+                                <input type="text" />
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <div>
+                                <input type="text" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="deliver-info">
+                        <div class="general-information-text">Người giao</div>
+                        <div class="div-input-infomation div-input-deliver">
+                            <input type="text"/>
+                        </div>
+                    </div>
+                    <div class="description-info">
+                        <div class="general-information-text">Diễn giải</div>
+                        <div class="div-input-infomation div-input-description">
+                            <input type="text"/>
+                        </div>
+                    </div>
+                    <div class="reference-info">
+                        <div class="general-information-text">Tham chiếu</div>
+                        <div class="div-input-infomation div-input-reference">
+                            <input type="text"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="dialog-voucher">
+                    <div>CHỨNG TỪ</div>
+                    <div class="export-number">
+                        <div class="voucher-text">Số phiếu xuất</div>
+                        <div class="div-input-voucher export-number-input">
+                            <input type="text" />
+                        </div>
+                    </div>
+                    <div class="export-date">
+                        <div class="voucher-text">Ngày xuất</div>
+                        <div class="div-input-voucher export-date-input">
+                            <input type="text" />
+                        </div>
+                    </div>
+                    <div class="export-hour">
+                        <div class="voucher-text">Giờ xuất</div>
+                        <div class="div-input-voucher export-hour-input">
+                            <input type="text" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dialog-table-detail">
+                <div>CHI TIẾT</div>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th class="th-text sku-code">Mã SKU</th>
+                            <th class="th-text item-name">Tên hàng hóa</th>
+                            <th class="th-text warehouse">Kho</th>
+                            <th class="th-text unit">Đơn vị tính</th>
+                            <th class="th-text amount">Số lượng</th>
+                            <th class="th-text unit-price">Đơn giá</th>
+                            <th class="th-text into-money">Thành tiền</th>
+                            <th class="th-text col-delete"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="td-text"></td>
+                            <td class="td-text td-item-name"></td>
+                            <td class="td-text"></td>
+                            <td class="td-text"></td>
+                            <td class="td-number">0</td>
+                            <td class="td-number">0</td>
+                            <td class="td-number">0</td>
+                            <td class="td-date">0</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="div-empty"></div>
+                <div class="total-result">
+                    <div class="sku-code">Số dòng = 1</div>
+                    <div class="item-name"></div>
+                    <div class="warehouse"></div>
+                    <div class="unit"></div>
+                    <div class="amount">0</div>
+                    <div class="unit-price"></div>
+                    <div class="into-money">0</div>
+                    <div class="col-delete"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/Scripts/Library/jquery-3.3.1.min.js"></script>
+    <script src="/Scripts/Library/jquery-ui.min.js"></script>
+    <script src="/Scripts/View/TRONG/renderListExport.js"></script>
+    <script src="/Scripts/View/TRONG/renderDialog.js"></script>
+</body>
+</html>

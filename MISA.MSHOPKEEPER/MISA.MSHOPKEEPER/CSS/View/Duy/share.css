@@ -1,0 +1,33 @@
+﻿body {
+    font-family: Roboto !important;
+}
+
+.choose-repayment:hover {
+    cursor: pointer;
+    color: #0088c2;
+}
+
+.lbl-item-repayment {
+    width: 80px;
+    height: 35px;
+    padding: 8px 5px 0 0;
+}
+
+.checked-status{
+    content: url('../../../Content/Icons/check.png')
+}
+
+.uncheck-status {
+    border: 2px solid rgba(1,1,1, 0.5);
+    padding: 5px;
+    margin: 3px;
+    width: 14px;
+}
+
+.custom-table{
+    margin: 10px;
+}
+
+
+
+
