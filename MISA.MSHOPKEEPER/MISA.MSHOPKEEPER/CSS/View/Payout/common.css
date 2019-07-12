@@ -1,0 +1,198 @@
+﻿
+/*
+    Create by: NXHUNG(2/7/2019)
+*/
+/* Căn vị trí chữ*/
+.text-align-right {
+    text-align: right;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+/*
+    css icon
+*/
+.icon {
+    width: 16px;
+    height: 16px;
+    background: url('/Content/Images/slibarmenu.png') no-repeat;
+}
+
+.icon-dropdown {
+    background-position: -29px 0px;
+}
+
+.icon-overview {
+    background-position: -29px 0px;
+}
+
+.icon-buy {
+    background-position: -29px -41px;
+}
+
+.icon-treasury {
+    background-position: -29px -79px;
+}
+
+.icon-money {
+    background-position: -29px -120px;
+}
+
+.icon-cost {
+    background-position: -29px -162px;
+}
+
+.icon-promotional {
+    background-position: -29px -200px;
+}
+
+.icon-catalog {
+    background-position: -29px -239px;
+}
+
+.icon-report {
+    background-position: -29px -279px;
+}
+
+.icon-set {
+    background-position: -29px -320px;
+}
+
+.icon-goods {
+    background-position: -29px -355px;
+}
+
+
+
+.show-hide {
+    display: block !important;
+}
+
+.row-selected {
+    background-color: #d9edf7 !important;
+}
+
+.content-grid button:focus {
+    outline: none;
+}
+
+.grid input:focus {
+    outline: none;
+}
+/*
+    Chỉnh sửa header
+    Author: NXHUNG(3/7/2019)
+*/
+.input-header {
+    display: flex;
+}
+
+
+.name-title-header {
+    margin-left: 8px;
+    margin-left: 8px;
+    padding: 12px 0;
+}
+
+.username-header {
+    margin-right: 0;
+}
+
+    .username-header span {
+        margin-left: 0px;
+        margin-right: 8px;
+    }
+
+.info-header {
+    cursor: pointer;
+}
+
+/* Css cho bảng*/
+.divTable {
+    display: table;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+    .divTable .divTitle {
+        display: table-caption;
+        text-align: center;
+        font-weight: bold;
+        font-size: larger;
+    }
+
+    .divTable .divHeading {
+        display: table-row;
+        text-align: center;
+    }
+
+
+
+    .divTable .Row {
+        display: table-row;
+    }
+
+        .divTable .Row:nth-of-type(odd) {
+            background-color: #f9f9f9;
+        }
+
+        .divTable .Row:hover {
+            background-color: #f5f5f5;
+            cursor: default
+        }
+
+    .divTable .Cell {
+        display: table-cell;
+        border: 1px solid #ddd;
+        border-width: thin;
+        padding: 0;
+        margin: 0;
+    }
+
+    .divTable .Row .Cell:first-child {
+        border-left: 0;
+    }
+
+    .divTable .Row .Cell:last-child {
+        border-right: 0;
+    }
+
+    .divTable .divHeading .Cell:first-child {
+        border-left: 0;
+    }
+
+    .divTable .divHeading .Cell:last-child {
+        border-right: 0;
+    }
+
+.Row .Cell {
+    height: 33px;
+    padding: 8px;
+}
+
+.divHeading .Cell {
+    height: 33px;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+img.ui-datepicker-trigger:hover {
+    cursor: pointer;
+}
+
+img.ui-datepicker-trigger {
+    width: 16px;
+    height: 16px;
+    margin: 4px 0;
+    background-image: url(/Content/Icons/common-icon.png);
+    background-position: -1px -177px;
+}

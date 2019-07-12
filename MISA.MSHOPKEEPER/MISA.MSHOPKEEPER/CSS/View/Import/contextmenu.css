@@ -1,0 +1,79 @@
+﻿
+/*Css của phần click chuột phải ở các hàng strong body table màn hình chính*/ 
+
+.context-menu {
+    width: 130px;
+    height: 182px;
+    border: 1px solid #ddd;
+    z-index: 99;
+    position: absolute;
+    border-radius: 3px;
+    display: none;
+}
+
+.button-context-menu {
+    width: 100%;
+    height: 36px;
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    display: flex;
+}
+
+    .button-context-menu:hover {
+        background-color: #026b97;
+        color: white;
+        border: 1px solid #026b97;
+    }
+
+        .button-context-menu:hover .context-menu {
+            border: 1px solid #026b97;
+        }
+
+.icon-contextMenu-add {
+    background-position: -150px 67px;
+}
+
+.icon-contextMenu-duplicate {
+    background-position: -50px 67px;
+}
+
+.icon-contextMenu-edit {
+    background-position: -75px 67px;
+}
+
+.icon-contextMenu-delete {
+    background-position: -100px 67px;
+}
+
+.icon-contextMenu-refesh {
+    background-position: -125px 67px;
+}
+
+.icon-contextMenu-view {
+    background-position: 270px 120px;
+}
+
+.button-context-menu:hover .icon-contextMenu-add {
+    background-position: -1px -127px;
+}
+
+.button-context-menu:hover .icon-contextMenu-duplicate {
+    background-position: -976px -127px;
+}
+
+.button-context-menu:hover .icon-contextMenu-edit {
+    background-position: -77px -203px;
+}
+
+.button-context-menu:hover .icon-contextMenu-delete {
+    background-position: -1076px -127px;
+}
+
+.button-context-menu:hover .icon-contextMenu-refesh {
+    background-position: -876px -127px;
+}
+
+.button-context-menu:hover .icon-contextMenu-view {
+    background-position: 318px -126px;
+}

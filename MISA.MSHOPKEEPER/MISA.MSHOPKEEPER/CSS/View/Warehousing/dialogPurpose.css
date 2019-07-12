@@ -1,0 +1,53 @@
+﻿
+/*css của dialog chọn chứng từ điều chuyển*/
+
+.main-dialogPurpose {
+    width: 100%;
+    height: 450px;
+    border-bottom: 1px solid #ddd;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+/*css phần bảng chính strong dialog*/
+.grid-dialogPurpose {
+    width: 100%;
+    height: calc(100% - 60px);
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+.table-dialogPurpose {
+    width: 100%;
+}
+
+    .table-dialogPurpose tr th {
+        border: 1px solid #ddd;
+        height: 35px;
+        text-align: center;
+    }
+
+    .table-dialogPurpose tr td {
+        border: 1px solid #ddd;
+        height: 35px;
+    }
+
+    .table-dialogPurpose thead {
+        background-color: #f0f0f0;
+    }
+
+    .table-dialogPurpose tr th:first-child {
+        border-left: 1px solid #f0f0f0;
+    }
+
+    .table-dialogPurpose tr td:first-child {
+        border-left: 1px solid white;
+    }
+
+    .table-dialogPurpose tr th:last-child {
+        border-right: 1px solid #f0f0f0;
+    }
+
+    .table-dialogPurpose tr td:last-child {
+        border-right: 1px solid white;
+    }

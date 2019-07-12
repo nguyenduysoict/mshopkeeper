@@ -1,5 +1,5 @@
 ﻿body {
-    font-family: Roboto !important;
+    font-family: 'Roboto', sans-serif !important;
 }
 
 .choose-repayment:hover {
@@ -14,7 +14,7 @@
 }
 
 .checked-status{
-    content: url('../../../Content/Icons/check.png')
+    content: url('../../../Content/Icons/check.png');
 }
 
 .uncheck-status {
@@ -22,12 +22,192 @@
     padding: 5px;
     margin: 3px;
     width: 14px;
+    z-index: -1;
 }
 
 .custom-table{
     margin: 10px;
 }
 
+.icon-agree {
+    background: url(../../../Content/Icons/common-icon.png) no-repeat -377px -127px;
+}
 
+.icon-cancel {
+    margin-top: 3px;
+    background: url(../../../Content/Icons/common-icon.png) no-repeat -255px -130px;
+}
 
+.btn-custom-blue-back {
+    background-color: #026b97;
+    color: white;
+    font-weight: bold;
+    margin-right: 10px;
+}
 
+.btn-custom {
+    height: 35px;
+    border-radius: 3px;
+    padding: 9px 18px 0 10px;
+    display: flex;
+}
+
+.icon-in-btn {
+    height: 15px;
+    width: 15px;
+    margin-right: 5px;
+}
+
+.btn-custom-no-border {
+    border: 1px solid white;
+    color: #026b97;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.btn-custom-no-border:hover {
+    border: 1px solid #026b97 !important;
+}
+
+.icon-popup {
+    height: 44px;
+    width: 44px;
+}
+.warning-icon-popup {
+    background: url('../../../Content/Icons/icon-popup.png') no-repeat -56px -2px;
+}
+
+.popup-message{
+    font-size: 13px;
+    margin:10px;
+}
+
+.popup-dialog{
+    display:flex;
+    margin: 10px;
+}
+
+.btn-confirm-dialog{
+    height: 35px;
+    border-radius: 3px;
+    padding: 9px 18px;
+    float: right;
+    margin-bottom:10px;
+}
+
+.btn-custom:hover{
+    cursor:pointer;
+}
+
+.custom-disabled-btn{
+    pointer-events:none;
+    opacity: 0.5;
+}
+
+.disabled-input-background {
+    background-color:#e5e6eb;
+}
+
+.dialog-input {
+    border: 1px solid #d0d0d0;
+    border-radius: 3px;
+    height: 35px;
+    padding: 5px 10px;
+}
+
+.Cell-1 {
+    width: 40px;
+    margin-bottom: -5px;
+    padding-left: 10px;
+}
+
+.Cell-2 {
+    width: 130px;
+}
+
+.Cell-3 {
+    width: 160px;
+}
+
+.Cell-4 {
+    width: 202px;
+}
+
+.Cell-5 {
+    width: 140px;
+}
+
+.Cell-6 {
+    width: 140px;
+}
+
+.custom-cell{
+    line-height: 30px;
+    padding-right: 10px !important;
+}
+
+.dropdown-div {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    border: 1px solid #e1e1e1;
+    box-shadow: -1px 3px 18px -8px rgba(0,0,0,0.75);
+    background-color: white;
+}
+
+.repayment-customer {
+    background-color: #f9f9f9;
+    min-width: 300px;
+}
+
+.thead-dropdown {
+    display: flex;
+    background: #f0f0f0;
+    font-weight: bold;
+    text-align: center;
+    height: 28px;
+    color: #212121;
+}
+
+.thead-dropdown .dropdown-column-name {
+    padding: 5px;
+    line-height: 22px;
+}
+
+.center-dropdown-column {
+    border-left: 1px solid #e1e1e1;
+    border-right: 1px solid #e1e1e1;
+}
+
+.tbody-dropdown {
+    width: 531px;
+}
+
+tbody tr td {
+    border: 1px solid #e1e1e1;
+    padding: 5px;
+    line-height: 25px;
+}
+
+.dropdown-div{
+    border-radius:3px;
+}
+
+.first-cell-in-row{
+    border-left: none;
+}
+
+.last-cell-in-row{
+    border-right: none;
+}
+
+.divHeading .d-cell {
+    display: table-cell;
+    border: 1px solid #ddd;
+    padding: 10px 0;
+}

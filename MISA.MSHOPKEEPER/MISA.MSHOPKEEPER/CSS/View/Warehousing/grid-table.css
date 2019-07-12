@@ -1,0 +1,119 @@
+﻿
+/*css phần bảng dữ liệu chính strong danh mục nhập kho*/
+.thead-table-grid {
+    width: 100%;
+}
+
+.check-all {
+    width: 39px;
+}
+
+.th-grid {
+    width: 151px;
+}
+
+.voucher-grid {
+    width: 303px;
+}
+
+.document-grid {
+    /* width: calc(100% - 786px); */
+}
+
+input.input-get-data.filter-table-grid.hasDatepicker {
+    text-align: left;
+}
+
+input.filter-table-grid {
+    text-align: left;
+}
+
+.header-table-grid {
+    height: 35px;
+    width: 100%;
+    text-align: center;
+    padding-top: 8px;
+}
+
+.input-table-grid {
+    padding-top: 0px;
+    background-color: #fff;
+    display: flex;
+}
+
+.tbody-table-grid tbody td {
+    padding-right: 8px;
+    height: 35px;
+}
+
+.tbody-table-grid tbody {
+    user-select: none;
+}
+
+.tfoot-table-grid thead tr {
+    height: 35px;
+}
+
+    .tfoot-table-grid thead tr th {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+.check-all-grid {
+    width: 16px;
+    height: 16px;
+    background-image: url('/Content/Icons/common-icon.png');
+    background-position: -1px -321px;
+    position: absolute;
+    top: 123px;
+    left: 10px;
+}
+
+.uncheck {
+    width: 16px;
+    height: 16px;
+    background-image: url('/Content/Icons/common-icon.png');
+    background-position: -1px -321px;
+    margin-left: 10px;
+}
+
+.tr-voucger-tableGrid {
+    /* min-width: 282px !important; */
+    /* max-width: 282px !important; */
+}
+
+.button-filter-tableGrid {
+    width: 34px;
+    height: 100%;
+    border-right: 1px solid #ddd;
+    padding-top: 8px;
+}
+
+.input-filter-tableGrid {
+    width: 100%;
+    height: 100%;
+}
+
+    .input-filter-tableGrid img.ui-datepicker-trigger {
+        position: absolute;
+        top: 134px;
+        left: 161px;
+    }
+
+.filter-table-grid {
+    width: 99% !important;
+    height: 100%;
+    border: 1px solid white;
+    padding-left: 8px !important;
+    font-weight: 300 !important;
+}
+
+.total-grid .filter-table-grid {
+    padding-right: 8px;
+    text-align: right;
+}
+
+.demo-fix::-webkit-scrollbar {
+    background-color: #F5F5F5;
+    border-left: 1px solid #F5F5F5;
+}

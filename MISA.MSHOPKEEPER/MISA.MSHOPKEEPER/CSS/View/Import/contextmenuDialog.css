@@ -1,0 +1,12 @@
+﻿
+/*css của phần click chuột phải ở dialog thêm phieeus mới chi tiết*/
+
+.context-menu-dialogAdd {
+    width: 130px;
+    height: 74px;
+    border: 1px solid #ddd;
+    z-index: 1000;
+    position: absolute;
+    border-radius: 3px;
+    display:none
+}

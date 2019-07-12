@@ -1,0 +1,160 @@
+﻿
+/*css bảng danh sách nhân viên*/
+.thead-list-export {
+    height: 65px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: #F5F5F5;
+}
+
+    .thead-list-export::-webkit-scrollbar {
+        background-color: #f0f0f0;
+    }
+
+    .thead-list-export table {
+        width: 100%;
+        /*table-layout: fixed;*/
+    }
+
+    .thead-list-export table thead {
+        background-color: #f0f0f0;
+    }
+
+    .thead-list-export table thead > tr:first-child th {
+        height: 32px;
+        white-space: nowrap;
+    }
+
+.th-no-padding {
+    padding: 0px !important;
+}
+
+.icon-input {
+    display: flex;
+    background-color: white;
+}
+
+    .icon-input input {
+        width: calc(100% - 30px);
+        height: 33px;
+        border: none;
+    }
+
+    .icon-input select {
+        height: 33px;
+        width: 100%;
+        border: none;
+    }
+
+.background-icon {
+    width: 30px;
+    height: 33px;
+    background-color: white;
+    cursor: pointer;
+    padding: 8px 0px;
+}
+
+    .background-icon .icon {
+        width: 16px;
+        height: 16px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+.icon-date {
+    background: url('/Content/Icons/common-icon.png') -327px -2px;
+}
+
+.icon-search {
+    background: url('/Content/Icons/common-icon.png') -352px -2px;
+}
+
+.thead-date-export {
+    width: 150px;
+    min-width: 80px;
+    height: 100%;
+    border-right: 1px solid #d0d0d0;
+}
+
+.thead-number-export {
+    width: 150px;
+    min-width: 100px;
+    height: 100%;
+    border-right: 1px solid #d0d0d0;
+}
+
+.thead-object-export {
+    width: 255px;
+    min-width: 150px;
+    height: 100%;
+    border-right: 1px solid #d0d0d0;
+}
+
+.thead-money-export {
+    width: 155px;
+    min-width: 100px;
+    height: 100%;
+    border-right: 1px solid #d0d0d0;
+}
+
+.thead-description-export {
+    width: calc(100% - 150px - 150px - 255px - 155px - 300px);
+    min-width: 150px;
+    border-right: 1px solid #d0d0d0;
+}
+
+.thead-type-export {
+    height: 100%;
+    width: 300px;
+    min-width: 130px;
+    border-right: 1px solid #d0d0d0;
+}
+
+.table-list-export {
+    overflow: auto;
+    height: 300px;
+    background-color: #f6f6f6;
+}
+
+    .table-list-export table {
+        width: 100%;
+    }
+
+    .table-list-export table tbody tr td {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .table-list-export table tbody tr:hover {
+        background-color: #ECF0F4;
+    }
+
+    .table-list-export table tbody > tr:first-child {
+        background-color: #c3ecff;
+    }
+
+.table-total {
+    background-color: #e2e2e2;
+    height: 32px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+    .table-total::-webkit-scrollbar {
+        background-color: white;
+    }
+
+.table-total table {
+    height: 100%;
+    width: 100%;
+}
+
+    .table-total table tbody tr .thead-money-export {
+        font-weight: bold;
+    }
+
+/*css class được thêm khi click chọn 1 hàng trong bảng*/
+.row-selected {
+    background-color: #c3ecff !important;
+}

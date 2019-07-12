@@ -114,7 +114,7 @@ img#img-login-header {
 
 .help-header {
     padding-top: 15px;
-    /* margin-left: 15px; */
+     margin-left: 15px; 
 }
 
 .text-help-header {
@@ -285,4 +285,5 @@ a.item-menu {
     top: 52px;
     bottom: 0px;
     width: calc(100% - 140px);
+    user-select: none;
 }

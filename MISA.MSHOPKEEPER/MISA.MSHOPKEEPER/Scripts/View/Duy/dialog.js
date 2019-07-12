@@ -2,11 +2,12 @@
 //Created by: NMDuy (9/7/19)
 
 class Dialog {
-    constructor(title, width, dialogName) {
+    constructor(title, width, height, dialogName) {
         this.Dialog = $('.' + dialogName).dialog({
             width: width,
+            height: height,
             fluid: true,
-            autoOpen: true,
+            autoOpen: false,
             title: title,
             modal: true,
             resizable: false

@@ -1,0 +1,81 @@
+﻿
+/*css chi ttieetstrong danh mục nhập kho*/
+.grid-detail {
+    width: 100%;
+    border: 1px solid #ddd;
+    position: absolute;
+    left: 0px;
+    bottom: 12px;
+    height: 303px;
+}
+
+.title-grid-detail {
+    height: 45px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    background: #f0f0f0;
+}
+
+.main-grid-detail {
+    height: calc(100% - 85px);
+}
+
+table#tbl-grid-detail {
+    /*height: 100%;*/
+}
+
+#tbl-grid-detail tbody tr {
+    height: 38px;
+}
+
+#tbl-grid-detail tfoot tr td {
+    height: 166px;
+    background-color: white;
+}
+
+.text-title-detail {
+    width: 62px;
+    height: 100%;
+    border-bottom: 2px solid #026b97;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.text-grid-detail {
+    font-weight: 600;
+    color: #026b97;
+}
+
+.col-text-detail {
+    width: 2px;
+    height: 32px;
+    background-color: #ddd;
+    position: absolute;
+    top: 3px;
+    left: 62px;
+}
+
+#tbl-grid-detail thead tr th {
+    text-align: center;
+}
+
+thead {
+    background: #f0f0f0;
+}
+
+.text-bold-detailGrid {
+    font-weight: bold;
+    background-color: #ffeeda !important;
+    height:37px;
+}
+
+#tbl-grid-detail td {
+    padding-left: 8px;
+}
+
+.cb-getdata.from-datetime-getdata img.ui-datepicker-trigger{
+    margin-top:7px !important;
+}
+.cb-getdata.to-datetime-getdata img.ui-datepicker-trigger{
+    margin-top:7px !important;
+}

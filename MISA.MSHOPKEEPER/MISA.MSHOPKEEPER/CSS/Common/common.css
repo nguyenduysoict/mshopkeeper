@@ -4,6 +4,16 @@
 .row-selected {
     background-color: #c3ecff !important;
 }
+
+.check {
+    background-image: url('/Content/Icons/check.png');
+}
+
+.row-selected-down {
+    color: #fff;
+    background: #5fa2dd !important;
+    border-color: #5fa2dd;
+}
 button[disabled] {
     color: #7d7b7b;
 }
@@ -24,6 +34,9 @@ button[disabled] {
 
     button[disabled] .btn-icon.btn-icon-delete {
         background-position: -100px 67px;
+    }
+    button[disabled] .btn-icon.btn-icon-view {
+        background-position: 268px -126px;
     }
 
 .text-left{

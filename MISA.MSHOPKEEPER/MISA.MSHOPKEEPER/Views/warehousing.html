@@ -1,0 +1,1322 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>MShopKeeper</title>
+    <link href="/CSS/Library/bootstrap.css" rel="stylesheet" />
+    <link href="/CSS/Library/jquery-ui.css" rel="stylesheet" />
+    <link href="/CSS/Library/jquery.timepicker.css" rel="stylesheet" />
+    <link href="/CSS/Common/style.css" rel="stylesheet" />
+    <link href="/CSS/View/Warehousing/styleimport.css" rel="stylesheet" />
+    <link href="/CSS/View/Warehousing/toolbar.css" rel="stylesheet" />
+    <link href="/CSS/View/Warehousing/grid.css" rel="stylesheet" />
+    <link href="/CSS/View/Warehousing/grid-table.css" rel="stylesheet" />
+    <link href="/CSS/View/Warehousing/getdata.css" rel="stylesheet" />
+    <link href="/CSS/View/Warehousing/contextmenu.css" rel="stylesheet" />
+    <link href="/CSS/View/Warehousing/pagination.css" rel="stylesheet" />
+    <link href="/CSS/View/Warehousing/griddetail.css" rel="stylesheet" />
+    <link href="/CSS/View/Warehousing/timepicker.css" rel="stylesheet" />
+    <link href="/CSS/View/Warehousing/dialog.css" rel="stylesheet" />
+    <link href="/CSS/View/Warehousing/dialogObject.css" rel="stylesheet" />
+    <link href="/CSS/View/Warehousing/dialogObject.css" rel="stylesheet" />
+    <link href="/CSS/View/Warehousing/contextmenuDialog.css" rel="stylesheet" />
+    <link href="/CSS/View/Warehousing/dialogProduct.css" rel="stylesheet" />
+    <link href="/CSS/View/Warehousing/dialogPurpose.css" rel="stylesheet" />
+    <link href="/CSS/View/Warehousing/confirmCancelAdd.css" rel="stylesheet" />
+    <link href="/CSS/Common/common.css" rel="stylesheet" />
+    <link href="/CSS/Library/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!--Description:header của page chính
+    CreateBy NVTIEN-->
+    <div class="header" style="display:flex">
+        <div class="logo-header">
+            <img src="/Content/Images/logo-mshopkeeper.png" />
+        </div>
+        <div class="info-header">
+            <div class="name-title-header">
+                <span id="text-title-header">Nhập kho</span>
+            </div>
+            <div class="user-header">
+                <div class="help-header">
+
+                    <img src="/Content/Images/icon_help_18.png" class="img-help-header" />
+                    <span class="text-help-header">Trợ giúp</span>
+                </div>
+
+                <div class="user-login-header">
+                    <div class="username-header">
+                        <span>Tất cả các chi nhánh</span>
+                        <i class="fa fa-chevron-down down-login-header"></i>
+                    </div>
+                    <div class="name-login-header">
+                        <img src="/Content/Images/Image.jpg" id="img-login-header" />
+                        <span id="one-user-header">Nguyễn Văn Tiến</span>
+                        <i class="fa fa-chevron-down down-login-header"></i>
+
+                        <ul class="menu-login-header">
+                            <li> <a href="#">Thông tin tài khoản</a></li>
+                            <li> <a href="#">Đổi mật khẩu</a></li>
+                            <li> <a href="#">Đăng xuất</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="phone-header"> </div>-->
+        </div>
+    </div>
+
+    <!--Description:menu trái của page chính
+    CreateBy NVTIEN-->
+    <div class="menu">
+        <div class="center-content-menu">
+            <a class="item-menu">
+                <div class="menu-icon icon-overview"></div>
+                <div>Tổng quan</div>
+            </a>
+            <a class="item-menu">
+                <div class="menu-icon icon-buy"></div>
+                <div>Mua hàng</div>
+            </a>
+            <a class="item-menu">
+                <div class="menu-icon icon-treasury"></div>
+                <div>Kho</div>
+            </a>
+            <a class="item-menu">
+                <div class="menu-icon icon-money"></div>
+                <div>Quỹ tiền</div>
+            </a>
+            <a class="item-menu">
+                <div class="menu-icon icon-cost"></div>
+                <div>Chi phí</div>
+            </a>
+            <a class="item-menu">
+                <div class="menu-icon icon-promotional"></div>
+                <div>Khuyến mãi</div>
+            </a>
+            <a class="item-menu">
+                <div class="menu-icon icon-catalog"></div>
+                <div>Danh mục</div>
+            </a>
+            <a class="item-menu">
+                <div class="menu-icon icon-report"></div>
+                <div>Báo cáo</div>
+            </a>
+            <a class="item-menu">
+                <div class="menu-icon icon-set"></div>
+                <div>Thiết lập</div>
+            </a>
+        </div>
+        <div class="bottom-content-menu">
+            <a class="item-menu">
+                <div class="menu-icon icon-goods"></div>
+                <div>Hàng hóa</div>
+            </a>
+        </div>
+    </div>
+
+    <!--Description: đổ dữ ở page chính
+    CreateBy NVTIEN-->
+    <div class="content">
+        <div class="content-grid">
+            <div class="toolbar">
+                <button id="" class="toolbar-btn-item btnAdd" title="Ctrl  + N">
+                    <div class="btn-icon btn-icon-add">
+                    </div>
+                    <span class="btn-text">Thêm mới</span>
+                </button>
+                <button id="" class="toolbar-btn-item btnDuplicate" title="Ctrl  + N">
+                    <div class="btn-icon btn-icon-duplicate">
+                    </div>
+                    <span class="btn-text">Nhân bản</span>
+                </button>
+
+                <button id="" class="toolbar-btn-item btnRefesh" title="Ctrl  + N">
+                    <div class="btn-icon btn-icon-view">
+                    </div>
+                    <span class="btn-text">Xem</span>
+                </button>
+                <button id="" class="toolbar-btn-item btnEdit" title="Ctrl  + N">
+                    <div class="btn-icon btn-icon-edit">
+                    </div>
+                    <span class="btn-text">Sửa</span>
+                </button>
+
+                <button id="" class="toolbar-btn-item btnDelete" title="Ctrl  + N">
+                    <div class="btn-icon btn-icon-delete">
+                    </div>
+                    <span class="btn-text">Xóa</span>
+                </button>
+                <button id="btnImport" class="toolbar-btn-item" title="Ctrl  + N">
+                    <div class="btn-icon btn-icon-printer ">
+                    </div>
+                    <span class="btn-text">In</span>
+                </button>
+
+            </div>
+            <div class="get-data">
+                <div class="cb-getdata combobox-get-data">
+                    <select class="select-get-data">
+                        <option value="today">Hôm nay</option>
+                        <option value="yesterday">Hôm qua</option>
+                        <option value="thisWeek">Tuần này</option>
+                        <option value="lastWeek">Tuần trước</option>
+                        <option value="thisMonth" selected>Tháng này</option>
+                        <option value="lastMonth">Tháng trước</option>
+                        <option value="thisQuarter">Quý này</option>
+                        <option value="lastQuarter">Quý trước</option>
+                        <option value="6MonthsAgo">6 tháng trước</option>
+                        <option value="thisYear">Năm nay</option>
+                        <option value="lastYear">Năm trước</option>
+                        <option value="other">Khác</option>
+                    </select>
+                </div>
+                <span class="from-text-getdata">Từ</span>
+                <div class="cb-getdata from-datetime-getdata">
+                    <input type="text" class="input-get-data" />
+                </div>
+                <span class="to-text-getdata">đến</span>
+                <div class="cb-getdata to-datetime-getdata">
+                    <input type="text" class="input-get-data" />
+                </div>
+                <button class="cb-getdata btn-get-data">
+                    <div class="icon-get-data"></div>
+                    <span class="text-get-data">Lấy dữ liệu</span>
+                </button>
+            </div>
+            <div class="grid">
+                <div style="overflow-y:scroll;border-left: 1px solid #ddd;" class="demo-fix">
+                    <table class="thead-table-grid table-bordered">
+                        <colgroup>
+                            <col width="39" />
+                            <col width="151" />
+                            <col width="151" />
+                            <col width="151" />
+                            <col width="151" />
+                            <col width="784" />
+                            <col width="303" />
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th class="check-all">
+                                    <div class="header-table-grid ">
+                                    </div>
+                                    <div class="header-table-grid input-table-grid">
+                                        <div class="check-all-grid"> </div>
+                                    </div>
+                                </th>
+                                <th class="th-grid date-grid">
+                                    <div class="header-table-grid ">
+                                        <span>NGÀY</span>
+                                    </div>
+                                    <div class="header-table-grid  input-table-grid">
+                                        <div class="button-filter-tableGrid" button="1">
+                                            <span>=</span>
+                                        </div>
+                                        <div class="input-filter-tableGrid">
+                                            <input type="text" class="input-get-data filter-table-grid" />
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="item">
+                                            <a href="">
+                                                <span class="text-menu-item">= : Bằng</span>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="">
+                                                <span class="text-menu-item"> < : Nhỏ hơn</span>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="">
+                                                <span class="text-menu-item">≤ : Nhỏ hơn hoặc bằng</span>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="">
+                                                <span class="text-menu-item">> : Lớn hơn</span>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="">
+                                                <span class="text-menu-item">≥ : Lớn hơn hoặc bằng</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th class="th-grid number-form">
+                                    <div class="header-table-grid ">
+                                        <span>SỐ PHIẾU NHẬP</span>
+                                    </div>
+                                    <div class="header-table-grid input-table-grid ">
+                                        <div class="button-filter-tableGrid" button="2">
+                                            <span>∗</span>
+                                        </div>
+                                        <div class="input-filter-tableGrid">
+                                            <input type="text" class="filter-table-grid" />
+                                        </div>
+                                    </div>
+                                </th>
+                                <th class="th-grid ">
+                                    <div class="header-table-grid ">
+                                        <span>NHÀ CUNG CẤP</span>
+                                    </div>
+                                    <div class="header-table-grid input-table-grid ">
+                                        <div class="button-filter-tableGrid" button="3">
+                                            <span>∗</span>
+                                        </div>
+                                        <div class="input-filter-tableGrid">
+                                            <input type="text" class="filter-table-grid" />
+                                        </div>
+                                    </div>
+
+                                    <div class="menu-item-two">
+                                        <div class="item-two">
+                                            <a href="">
+                                                <span class="text-menu-item">∗ : Chứa</span>
+                                            </a>
+                                        </div>
+                                        <div class="item-two">
+                                            <a href="">
+                                                <span class="text-menu-item"> = : Bằng</span>
+                                            </a>
+                                        </div>
+                                        <div class="item-two">
+                                            <a href="">
+                                                <span class="text-menu-item">+ : Bắt đầu bằng</span>
+                                            </a>
+                                        </div>
+                                        <div class="item-two">
+                                            <a href="">
+                                                <span class="text-menu-item">- : Kết thúc bằng</span>
+                                            </a>
+                                        </div>
+                                        <div class="item-two">
+                                            <a href="">
+                                                <span class="text-menu-item">! : Không chứa</span>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </th>
+                                <th class="th-grid total-grid">
+                                    <div class="header-table-grid ">
+                                        <span>TỔNG TIỀN</span>
+                                    </div>
+                                    <div class="header-table-grid input-table-grid ">
+                                        <div class="button-filter-tableGrid" button="4">
+                                            <span>=</span>
+                                        </div>
+                                        <div class="input-filter-tableGrid">
+                                            <input type="number" class="filter-table-grid" />
+                                        </div>
+                                    </div>
+                                </th>
+                                <th class="document-grid">
+                                    <div class="header-table-grid ">
+                                        <span>DIỄN GIẢI</span>
+                                    </div>
+                                    <div class="header-table-grid input-table-grid ">
+                                        <div class="button-filter-tableGrid" button="5">
+                                            <span>∗</span>
+                                        </div>
+                                        <div class="input-filter-tableGrid">
+                                            <input type="text" class="filter-table-grid" />
+                                        </div>
+                                    </div>
+                                </th>
+                                <th class="voucher-grid">
+                                    <div class="header-table-grid ">
+                                        <span>LOẠI CHỨNG TỪ</span>
+                                    </div>
+                                    <div class="header-table-grid input-table-grid ">
+
+                                    </div>
+                                </th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                <div class="" style="overflow-y:scroll; height:311px;border-left: 1px solid #ddd; ">
+
+                    <table class="tbody-table-grid table-bordered table-hover table-striped" style="overflow:scroll;width:100%;">
+                        <colgroup>
+                            <col width="39" />
+                            <col width="151" />
+                            <col width="151" />
+                            <col width="151" />
+                            <col width="151" />
+                            <col width="784" />
+                            <col width="303" />
+                        </colgroup>
+                        <tbody id="body-tbody-tableGrid"></tbody>
+
+                    </table>
+                </div>
+                <div style="overflow-y:scroll;" class="demo-fix">
+                    <table class="thead-table-grid table-bordered tfoot-table-grid">
+                        <colgroup>
+                            <col width="39" />
+                            <col width="151" />
+                            <col width="151" />
+                            <col width="151" />
+                            <col width="151" />
+                            <col width="784" />
+                            <col width="303" />
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th class="check-all"></th>
+                                <th class="th-grid date-grid"></th>
+                                <th class="th-grid number-form"></th>
+                                <th class="th-grid "></th>
+                                <th class="th-grid total-grid text-right">200.000</th>
+                                <th class="document-grid"></th>
+                                <th class="voucher-grid"></th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                <div class="pagination-table">
+                    <div class="icon-pagination icon-double-left"></div>
+                    <div class="icon-pagination icon-left"></div>
+                    <span class="text-pagination">Trang</span>
+                    <input type="number" min="1" class="input-pagination" />
+                    <span class="text-pagination">trên 1</span>
+                    <div class="icon-pagination icon-double-right"></div>
+                    <div class="icon-pagination icon-right"></div>
+                    <div class="icon-pagination icon-refesh-pagination"></div>
+                    <span class="text-pagination">Số bản ghi</span>
+                    <div class="select-main-pagination">
+                        <select>
+                            <option value="15">15</option>
+                            <option value="25">25</option>
+                            <option value="50">50</option>
+                            <option value="100">100</option>
+                        </select>
+                    </div>
+                    <span class="text-pagination result-pagination">1-15 trong 30 kết quả</span>
+                </div>
+
+            </div>
+
+            <div class="grid-detail">
+                <div class="title-grid-detail">
+                    <div class="text-title-detail">
+                        <span class="text-grid-detail">Chi tiết</span>
+                    </div>
+                </div>
+                <div class="main-grid-detail">
+                    <table class=" table-hover" id="tbl-grid-detail">
+                        <thead>
+                            <tr>
+                                <th>MÃ HÀNG HÓA</th>
+                                <th>TÊN HÀNG HÓA</th>
+                                <th>KHO</th>
+                                <th>ĐƠN VỊ TÍNH</th>
+                                <th>ĐƠN GIÁ</th>
+                                <th>SỐ LƯỢNG</th>
+                                <th>THÀNH TIỀN</th>
+                            </tr>
+                        </thead>
+                        <tbody style="background-color: white;">
+                            <tr>
+                                <td>AKK2556791</td>
+                                <td>Áo khoác kaki nam</td>
+                                <td>Chi nhánh Cầu Giấy</td>
+                                <td>Chiếc</td>
+                                <td class="text-right">350.000</td>
+                                <td class="text-center">2</td>
+                                <td class="text-right">700.000</td>
+                            </tr>
+                            <tr>
+                                <td>AKK2556791</td>
+                                <td>Áo khoác kaki nam</td>
+                                <td>Chi nhánh Cầu Giấy</td>
+                                <td>Chiếc</td>
+                                <td class="text-right">350.000</td>
+                                <td class="text-center">2</td>
+                                <td class="text-right">700.000</td>
+                            </tr>
+                        </tbody>
+                        
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--HTML cho context menu-->
+    <!--Description:Context menu của giao dienj chính
+    CreateBy NVTIEN-->
+    <div class="context-menu">
+        <div class="main-context-menu">
+            <button class=" button-context-menu btnAdd">
+                <div class="btn-icon icon-contextMenu-add" id="btnAdd"></div>
+                <span>Thêm mới</span>
+            </button>
+            <button id="" class="button-context-menu btnDuplicate" style="border-bottom: 1px solid #dddddd">
+                <div class="btn-icon icon-contextMenu-duplicate"></div>
+                <span>Nhân bản</span>
+            </button>
+            <button id="" class="button-context-menu btnEdit">
+                <div class="btn-icon icon-contextMenu-edit"></div>
+                <span>Sửa</span>
+            </button>
+            <button id="" class="button-context-menu btnDelete">
+                <div class="btn-icon icon-contextMenu-delete"></div>
+                <span>Xóa</span>
+            </button>
+
+            <button id="" class="button-context-menu btnRefesh" style="border-top: 1px solid #dddddd">
+                <div class="btn-icon icon-contextMenu-view"></div>
+                <span>Xem</span>
+            </button>
+        </div>
+    </div>
+
+    <!--Description: Dialog của form thêm phiếu nhập kho mới
+    CreateBy NVTIEN-->
+    <div class="dialogAdd" style="display:none;">
+        <div class="main-dialog-add">
+            <div class="toolbar-dialog-add">
+                <button class="button-dialog-add before-dialog-add">
+                    <div class="icon-dialog-add icon-before-dialog"></div>
+                    <span class="text-dialog-add text-before-dialog">Trước</span>
+                    <div class="iconRight-before-dialog">
+                        <i class="fa fa-caret-down"></i>
+                    </div>
+                </button>
+                <button class="button-dialog-add after-dialog-add">
+                    <span class="text-dialog-add text-after-dialog">Sau</span>
+                    <div class="icon-dialog-add icon-after-dialog"></div>
+                    <div class="iconRight-after-dialog">
+                        <i class="fa fa-caret-down"></i>
+                    </div>
+                </button>
+                <div class="col-dialog-add"></div>
+
+                <button class="button-dialog-add newAdd-dialog-add">
+                    <div class="icon-dialog-add icon-newAdd-dialog"></div>
+                    <span class="text-dialog-add text-newAdd-dialog">Thêm mới</span>
+                </button>
+
+                <button class="button-dialog-add newEdit-dialog-add">
+                    <div class="icon-dialog-add icon-newEdit-dialog"></div>
+                    <span class="text-dialog-add text-newEdit-dialog">Sửa</span>
+                </button>
+                <button class="button-dialog-add newSave-dialog-add">
+                    <div class="icon-dialog-add icon-newSave-dialog"></div>
+                    <span class="text-dialog-add text-newSave-dialog">Lưu</span>
+                </button>
+
+                <button class="button-dialog-add newDelete-dialog-add">
+                    <div class="icon-dialog-add icon-newDelete-dialog"></div>
+                    <span class="text-dialog-add text-newDelete-dialog">Xóa</span>
+                </button>
+
+                <button class="button-dialog-add newDelay-dialog-add">
+                    <div class="icon-dialog-add icon-newDelay-dialog"></div>
+                    <span class="text-dialog-add text-newDelay-dialog">Hoãn</span>
+                </button>
+                <div class="col-dialog-add"></div>
+
+                <button class="button-dialog-add newPrinter-dialog-add">
+                    <div class="icon-dialog-add icon-newPrinter-dialog"></div>
+                    <span class="text-dialog-add text-newPrinter-dialog">In</span>
+                    <div class="iconRight-after-dialog">
+                        <i class="fa fa-caret-down"></i>
+                    </div>
+                </button>
+                <div class="col-dialog-add"></div>
+
+
+                <button class="button-dialog-add newHelp-dialog-add">
+                    <div class="icon-dialog-add icon-newHelp-dialog"></div>
+                    <span class="text-dialog-add text-newHelp-dialog">Trợ giúp</span>
+                </button>
+
+
+                <button class="button-dialog-add newClose-dialog-add">
+                    <div class="icon-dialog-add icon-newClose-dialog"></div>
+                    <span class="text-dialog-add text-newClose-dialog">Đóng</span>
+                </button>
+
+            </div>
+
+            <div class="purpose-dialog-add">
+                <span class="text-purpose-dialog" style="">Mục đích</span>
+                <div class="check-purpose-dialog">
+                    <div class="check-orther"></div>
+                    <span>Khác</span>
+                </div>
+                <div class="checkTwo-purpose-dialog">
+                    <div class="check-from-store"></div>
+                    <span>Điều chuyển từ của hàng khác</span>
+                </div>
+
+                <button class="button-purpose-dialog" id="btn-dialogPurpose">
+                    <span style=" color: #0088c2; font-weight: 600;">Chọn chứng từ điều chuyển</span>
+                </button>
+            </div>
+
+            <div class="info-dialog-add">
+                <div class="common-dialog-add">
+                    <span class="text-common-dialog">THÔNG TIN CHUNG</span>
+                    <div class="object-dialog-add">
+                        <div class="name-object-dialog">
+                            <span>Đối tượng</span>
+                        </div>
+                        <div class="input-object-dialog">
+                            <div class="input-people-dialog">
+                                <input type="text" style="height:100%; width:100%; padding-left:8px; border: 1px solid white; border-radius:3px;" />
+                                <div class="down-people-dialog" id="down-people-dialog">
+                                    <img src="/Content/Icons/arrow-down-line.png" />
+                                </div>
+                                <div class="search-people-dialog" id="search-people-dialog">
+                                    <div class="img-search-dialog"></div>
+                                </div>
+
+                                <!--form xổ xuống khi click mũi tên down-->
+                                <div class="form-down-people">
+                                    <div class="header-down-people">
+                                        <table class="theader-down-people">
+                                            <thead>
+                                                <tr>
+                                                    <th class="cate-down-people">Loại</th>
+                                                    <th class="name-down-people">Tên</th>
+                                                    <th class="code-down-people">Mã</th>
+                                                </tr>
+                                            </thead>
+                                        </table>
+                                    </div>
+                                    <div class="body-down-people">
+                                        <table class="tbody-down-people">
+                                            <tbody>
+                                                <tr>
+                                                    <td>NCC001</td>
+                                                    <td>Nguyễn Văn Tiến</td>
+                                                    <td>Nhân viên</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>NCC001</td>
+                                                    <td>Nguyễn Văn Tiến</td>
+                                                    <td>Nhân viên</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>NCC001</td>
+                                                    <td>Nguyễn Văn Tiến</td>
+                                                    <td>Nhân viên</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>NCC001</td>
+                                                    <td>Nguyễn Văn Tiến</td>
+                                                    <td>Nhân viên</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>NCC001</td>
+                                                    <td>Nguyễn Văn Tiến</td>
+                                                    <td>Nhân viên</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>NCC001</td>
+                                                    <td>Nguyễn Văn Tiến</td>
+                                                    <td>Nhân viên</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>NCC001</td>
+                                                    <td>Nguyễn Văn Tiến</td>
+                                                    <td>Nhân viên</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>NCC001</td>
+                                                    <td>Nguyễn Văn Tiến</td>
+                                                    <td>Nhân viên</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>NCC001</td>
+                                                    <td>Nguyễn Văn Tiến</td>
+                                                    <td>Nhân viên</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>NCC001</td>
+                                                    <td>Nguyễn Văn Tiến</td>
+                                                    <td>Nhân viên</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>NCC001</td>
+                                                    <td>Nguyễn Văn Tiến</td>
+                                                    <td>Nhân viên</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>NCC001</td>
+                                                    <td>Nguyễn Văn Tiến</td>
+                                                    <td>Nhân viên</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="inputText-search-dialog">
+                            <input type="text" style="height:100%; border: 1px solid white; width:100%;padding-left:8px; border-radius:3px;" />
+                        </div>
+                    </div>
+
+                    <div class="deliver-dialog-add">
+                        <div class="name-deliver-dialog">
+                            <span>Người giao</span>
+                        </div>
+                        <div class="input-deliver-dialog">
+                            <input type="text" style="height:100%; border: 1px solid white; width:100%;padding-left:8px; border-radius:3px;" />
+
+                        </div>
+
+                    </div>
+                    <div class="deliver-dialog-add">
+                        <div class="name-deliver-dialog">
+                            <span>Diễn giải</span>
+                        </div>
+                        <div class="input-deliver-dialog">
+                            <input type="text" style="height:100%; border: 1px solid white; width:100%;padding-left:8px; border-radius:3px;" />
+
+                        </div>
+
+                    </div>
+                    <div class="deliver-dialog-add">
+                        <div class="name-deliver-dialog">
+                            <span>Tham chiếu</span>
+                        </div>
+                        <!--<div class="input-deliver-dialog">
+                            <input type="text" style="height:100%; border: 1px solid white; width:100%;padding-left:8px; border-radius:3px;" />
+
+                        </div>-->
+
+                    </div>
+                </div>
+                <div class="vouchers-dialog-add">
+                    <span class="text-common-dialog">Chứng từ</span>
+                    <div class="number-vouchers-dialog">
+                        <div class="name-number-dialog">
+                            <span>Số phiếu nhập</span>
+                        </div>
+                        <div class="input-number-vouchers">
+                            <input type="text" style="height:100%; border: 1px solid white; width:100%;padding-left:8px; border-radius:3px;" />
+
+                        </div>
+                    </div>
+
+                    <div class="number-vouchers-dialog">
+                        <div class="name-number-dialog">
+                            <span>Ngày nhập</span>
+                        </div>
+                        <div class="input-number-vouchers">
+                            <input type="text" style="width:99%;" class="input-get-data" id="date" />
+                        </div>
+                    </div>
+
+                    <div class="number-vouchers-dialog">
+                        <div class="name-number-dialog">
+                            <span>Giờ nhập</span>
+                        </div>
+                        <div class="input-number-vouchers">
+                            <input type="text" class="time" id="timepicker-dialog-add" style="width:99%; padding-left:8px; height: 100%; border: 1px solid white;" />
+                            <div class="timepicker-vouchers-dialog"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="collapse-dialog-add">
+                <div class="row-collapse-dialog"></div>
+                <div class="text-collapse-dialog collapse-dialog" style="font-weight:bold">
+                    <span>Thu gọn</span>
+                    <i class="fa fa-angle-up"></i>
+                </div>
+                <div class="text-collapse-dialog extent-dialog" style="display:none; font-weight:bold">
+                    <span>Mở rộng</span>
+                    <i class="fa fa-angle-down"></i>
+                </div>
+                <div class="row-collapse-dialog"></div>
+            </div>
+
+            <div class="detail-dialog-add">
+                <div class="title-detail-dialogAdd">
+                    <span>CHI TIẾT</span>
+                </div>
+                <div class="table-detail-dialogAdd">
+                    <div class="detail-product-dialogAdd">
+                        <div style="overflow-y:scroll" class="theader-deatail-table">
+                            <table class="thead-detail-product ">
+                                <colgroup>
+                                    <col width="162" />
+                                    <col width="155" />
+                                    <col width="152" />
+                                    <col width="91" />
+                                    <col width="112" />
+                                    <col width="102" />
+                                    <col width="110" />
+                                    <col width="51" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th class="sku-code">Mã SKU</th>
+                                        <th class="product-name">Tên hàng hóa</th>
+                                        <th class="warehouse-product">Kho</th>
+                                        <th class="unit-product">Đơn vị tính</th>
+                                        <th class="price-product">Đơn giá</th>
+                                        <th class="number-product">Số lượng</th>
+                                        <th class="total-product">Thành tiền</th>
+                                        <th class="delete-product"></th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                        <div class="body-product-dialogAdd" style="overflow-y:scroll;">
+                            <table class="tbody-detail-product">
+                                <colgroup>
+                                    <col width="162" />
+                                    <col width="155" />
+                                    <col width="152" />
+                                    <col width="91" />
+                                    <col width="112" />
+                                    <col width="102" />
+                                    <col width="110" />
+                                    <col width="51" />
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="input-detail sku-code-body">
+
+                                                <input type="text" class="input-detail place-holder-SKU" />
+                                                <div class="down-people-dialog down-detail-product" id="detail-down-dialogAdd">
+                                                    <img src="/Content/Icons/arrow-down-line.png" />
+                                                </div>
+                                                <div class="search-people-dialog search-detail-product">
+                                                    <div class="img-search-dialog"></div>
+                                                </div>
+
+
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-detail product-name-body">
+                                                <input type="text" class="input-detail" readonly="readonly" />
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-detail warehouse-product-body">
+                                                <input type="text" class="input-detail" readonly="readonly" />
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-detail unit-product-body">
+                                                <input type="text" class="input-detail" readonly="readonly" />
+                                            </div>
+                                        </td>
+
+                                        <td>
+                                            <div class="input-detail price-product-body">
+                                                <input type="number" class="input-detail" min="0" />
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-detail number-product-body">
+                                                <input type="number" class="input-detail " min="0" />
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-detail total-product-body">
+                                                <input type="number" class="input-detail" min="0" />
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-detail delete-product-body">
+                                                <div class="btn-delete-product"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tfooter-deatail-table" style="overflow-y:scroll; border-left:1px solid #ddd;">
+                            <table class="thead-detail-product ">
+                                <colgroup>
+                                    <col width="162" />
+                                    <col width="155" />
+                                    <col width="152" />
+                                    <col width="91" />
+                                    <col width="112" />
+                                    <col width="102" />
+                                    <col width="110" />
+                                    <col width="51" />
+                                </colgroup>
+                                <thead style="background-color: #ffeeda">
+                                    <tr>
+                                        <th class="sku-code text-left">Số dòng = <span> 1</span></th>
+                                        <th class="product-name text-left"></th>
+                                        <th class="warehouse-product text-left"></th>
+                                        <th class="unit-product text-left"></th>
+                                        <th class="number-product text-right"></th>
+                                        <th class="price-product text-right"></th>
+                                        <th class="total-product text-right">0</th>
+                                        <th class="delete-product" style="border-right:0px;"></th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="context-menu-dialogAdd">
+            <div class="main-context-dialogAdd">
+                <button class=" button-context-menu btnAdd">
+                    <div class="btn-icon icon-contextMenu-add" id="btnAdd"></div>
+                    <span>Thêm mới</span>
+                </button>
+                <button id="" class="button-context-menu btnDelete">
+                    <div class="btn-icon icon-contextMenu-delete"></div>
+                    <span>Xóa</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!--Description: Dialog của form đóng phiếu nhập mới
+    CreateBy NVTIEN-->
+    <div class="confirmCancelAdd">
+        <div class="main-confirm-cancel">
+            <div class="img-main-confirm"> </div>
+            <div class="text-main-confirm">
+                <span>Dữ liệu bạn đã thay đổi, bạn có muốn lưu không?</span>
+            </div>
+        </div>
+        <div class="button-confirm-cancel">
+            <button class="btnSaveCancel">
+                <div class="img-btn-save-cancel"></div>
+                <div class="text-btn-save-cancel">Lưu</div>
+            </button>
+            <button class="btnNotConfirm">
+                <div class="img-btn-not-confirm"></div>
+                <div class="text-btn-not-confirm">Không lưu</div>
+            </button>
+            <button class="btnCancelConfirm">
+                <div class="img-canccel-confirm"></div>
+                <div class="text-cancel-confirm">Hủy bỏ</div>
+            </button>
+        </div>
+    </div>
+
+    <!--form xổ xuống khi click mũi tên down-->
+    <div class="form-down-detailPeople ">
+        <div class="header-down-detailPeople">
+            <table class="theader-down-detailPeople">
+                <thead>
+                    <tr>
+                        <th class="name-down-detailPeople">Tên</th>
+                        <th class="code-down-detailPeople">Mã</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <div class="body-down-detailPeople">
+            <table class="tbody-down-detailPeople">
+                <tbody>
+                    <tr>
+                        <td>SP01</td>
+                        <td>Nguyễn Văn Tiến</td>
+                    </tr>
+                    <tr>
+                        <td>NCC001</td>
+                        <td>Nguyễn Văn Tiến</td>
+                    </tr>
+                    <tr>
+                        <td>NCC001</td>
+                        <td>Nguyễn Văn Tiến</td>
+                    </tr>
+                    <tr>
+                        <td>NCC001</td>
+                        <td>Nguyễn Văn Tiến</td>
+                    </tr>
+                    <tr>
+                        <td>NCC001</td>
+                        <td>Nguyễn Văn Tiến</td>
+                    </tr>
+                    <tr>
+                        <td>NCC001</td>
+                        <td>Nguyễn Văn Tiến</td>
+                    </tr>
+                    <tr>
+                        <td>NCC001</td>
+                        <td>Nguyễn Văn Tiến</td>
+                    </tr>
+                    <tr>
+                        <td>NCC001</td>
+                        <td>Nguyễn Văn Tiến</td>
+                    </tr>
+                    <tr>
+                        <td>NCC001</td>
+                        <td>Nguyễn Văn Tiến</td>
+                    </tr>
+                    <tr>
+                        <td>NCC001</td>
+                        <td>Nguyễn Văn Tiến</td>
+                    </tr>
+                    <tr>
+                        <td>NCC001</td>
+                        <td>Nguyễn Văn Tiến</td>
+                    </tr>
+                    <tr>
+                        <td>NCC001</td>
+                        <td>Nguyễn Văn Tiến</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!--Description: Dialog của form chọn đối tượng
+    CreateBy NVTIEN-->
+    <div class="dialogObject">
+        <div class="main-dialog-object">
+            <div class="search-dialog-object">
+                <div class="text-search-dialogObject">
+                    <span>Loại đối tượng</span>
+                </div>
+                <div class="cb-dialogObject"></div>
+                <div class="input-dialogObject">
+                    <input type="text" placeholder="Nhập mã đối tượng, tên đối tượng" class="txt-input-dialogObject" />
+                </div>
+                <button class="btn-search-dialogObject">
+                    <div class="icon-search-dialogObject"></div>
+                    <span class="textSearch-btn-dialogObject">Tìm kiếm</span>
+                </button>
+            </div>
+            <div class="grid-dialogObject">
+                <div class="theader-grid-dialogObject">
+
+                    <table class="header-dialogObject">
+                        <colgroup>
+                            <col width="47" />
+                            <col width="149" />
+                            <col width="178" />
+                            <col width="199" />
+                            <col width="199" />
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th class="check-dialog-Object"></th>
+                                <th class="object-code">MÃ ĐỐI TƯỢNG</th>
+                                <th class="object-name">NAME ĐỐI TƯỢNG</th>
+                                <th class="cate-object">LOẠI ĐỐI TƯỢNG</th>
+                                <th class="address-object">ĐỊA CHỈ</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                <div class="tbody-grid-dialogObject">
+                    <table class="body-dialogObject">
+                        <colgroup>
+                            <col width="47" />
+                            <col width="149" />
+                            <col width="178" />
+                            <col width="199" />
+                            <col width="199" />
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="body-check-dialogObject"></div>
+                                </td>
+                                <td>
+                                    <div class="body-object-code"></div>
+                                </td>
+                                <td>
+                                    <div class="body-object-name"></div>
+                                </td>
+                                <td>
+                                    <div class="body-cate-object"></div>
+                                </td>
+                                <td>
+                                    <div class="body-cate-object"></div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="fix-border-grid"></div>
+        </div>
+        <div class="all-button-dialogObject">
+            <div class="btn-access-dialogObject">
+                <div class="icon-access-dialogObject"></div>
+                <div class="text-access-dialogObject">
+                    <span style="color:white; font-weight:bold;font-size:12px;">Đồng ý</span>
+                </div>
+            </div>
+
+            <div class="btn-cancel-dialogObject btnCancelPeople">
+                <div class="icon-cancel-dialogObject"></div>
+                <div class="text-cancel-dialogObject">
+                    <span style="color:#247ba0; font-weight:bold;font-size:13px;">Hủy bỏ</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Description: Dialog của form chọn hàng hóa
+    CreateBy NVTIEN-->
+    <div class="dialogProduct">
+        <div class="main-dialogProduct">
+            <div class="search-dialog-product">
+                <div class="text-search-dialogProduct">
+                    <span>Nhóm hàng hóa</span>
+                </div>
+                <div class="cb-dialogProduct"></div>
+                <div class="input-dialogProduct">
+                    <input type="text" placeholder="Nhập mã SKU, tên hàng hóa" class="txt-input-dialogProduct" />
+                </div>
+                <button class="btn-search-dialogProduct">
+                    <div class="icon-search-dialogProduct"></div>
+                    <span class="textSearch-btn-dialogProduct">Tìm kiếm</span>
+                </button>
+            </div>
+            <div class="total-dialog-product">
+                <span> 1 mẫu mã (5 hàng hóa) đã được chọn</span>
+            </div>
+            <div class="grid-Product">
+                <table class="table-grid-Product">
+                    <thead>
+                        <tr>
+                            <th class="sku-code-dialogProduct">Mã SKU</th>
+                            <th class="product-name-dialogProduct">Tên hàng hóa</th>
+                            <th class="group-product-dialogProduct">Nhóm hàng hóa</th>
+                            <th class="unit-dialogProduct">Đơn vị tính</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="pagination-table pagination-dialogProduct">
+                <div class="icon-pagination icon-double-left"></div>
+                <div class="icon-pagination icon-left"></div>
+                <span class="text-pagination">Trang</span>
+                <input type="number" min="1" class="input-pagination" />
+                <span class="text-pagination">trên 1</span>
+                <div class="icon-pagination icon-double-right"></div>
+                <div class="icon-pagination icon-right"></div>
+                <div class="icon-pagination icon-refesh-pagination"></div>
+                <span class="text-pagination">Số bản ghi</span>
+                <div class="select-main-pagination">
+                    <select>
+                        <option value="15">15</option>
+                        <option value="25">25</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                    </select>
+                </div>
+                <span class="text-pagination result-pagination">1-15 trong 30 kết quả</span>
+            </div>
+        </div>
+
+        <div class="all-button-dialogObject">
+            <div class="btn-access-dialogObject">
+                <div class="icon-access-dialogObject"></div>
+                <div class="text-access-dialogObject">
+                    <span style="color:white; font-weight:bold;font-size:12px;">Chọn</span>
+                </div>
+            </div>
+
+            <div class="btn-cancel-dialogObject btnCancelProduct">
+                <div class="icon-cancel-dialogObject"></div>
+                <div class="text-cancel-dialogObject">
+                    <span style="color:#247ba0; font-weight:bold;font-size:13px;">Hủy bỏ</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Description: Dialog của form hàng hóa đã chọn
+    CreateBy NVTIEN-->
+    <div class="dialogTickProduct">
+        <div class="main-dialogProduct">
+            <div class="search-dialog-product">
+                <div class="text-search-dialogProduct">
+                    <span>Nhóm hàng hóa</span>
+                </div>
+                <div class="cb-dialogProduct"></div>
+                <div class="input-dialogProduct">
+                    <input type="text" placeholder="Nhập mã SKU, tên hàng hóa" class="txt-input-dialogProduct" />
+                </div>
+                <button class="btn-search-dialogProduct">
+                    <div class="icon-search-dialogProduct"></div>
+                    <span class="textSearch-btn-dialogProduct">Tìm kiếm</span>
+                </button>
+            </div>
+            <div class="total-dialog-product">
+                <span> 1 mẫu mã (5 hàng hóa) đã được chọn</span>
+            </div>
+            <div class="grid-Product">
+                <table class="table-grid-Product">
+                    <thead>
+                        <tr>
+                            <th class="sku-code-dialogProduct">Mã SKU</th>
+                            <th class="product-name-dialogProduct">Tên hàng hóa</th>
+                            <th class="group-product-dialogProduct" style="width:200px !important">Nhóm hàng hóa</th>
+                            <th class="unit-dialogProduct">Đơn vị tính</th>
+                            <th class="" style="width:51px;"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <div class="input-detail delete-product-body">
+                                    <div class="btn-delete-product"></div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="pagination-table pagination-dialogProduct">
+                <div class="icon-pagination icon-double-left"></div>
+                <div class="icon-pagination icon-left"></div>
+                <span class="text-pagination">Trang</span>
+                <input type="number" min="1" class="input-pagination" />
+                <span class="text-pagination">trên 1</span>
+                <div class="icon-pagination icon-double-right"></div>
+                <div class="icon-pagination icon-right"></div>
+                <div class="icon-pagination icon-refesh-pagination"></div>
+                <span class="text-pagination">Số bản ghi</span>
+                <div class="select-main-pagination">
+                    <select>
+                        <option value="15">15</option>
+                        <option value="25">25</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                    </select>
+                </div>
+                <span class="text-pagination result-pagination">1-15 trong 30 kết quả</span>
+            </div>
+        </div>
+
+        <div class="all-button-dialogObject">
+            <div class="btn-access-dialogObject">
+                <div class="icon-access-dialogObject"></div>
+                <div class="text-access-dialogObject">
+                    <span style="color:white; font-weight:bold;font-size:12px;">Chọn</span>
+                </div>
+            </div>
+
+            <div class="btn-cancel-dialogObject">
+                <div class="icon-cancel-dialogObject"></div>
+                <div class="text-cancel-dialogObject">
+                    <span style="color:#247ba0; font-weight:bold;font-size:13px;">Hủy bỏ</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Description: Dialog của form chọn chứng từ xuất kho điều chuyển
+    CreateBy NVTIEN-->
+    <div class="dialogPurpose">
+        <div class="main-dialogPurpose">
+            <div class="get-data" style="border-left:0px;">
+                <div class="cb-getdata combobox-get-data" style="margin-left:0">
+                    <select class="select-get-data">
+                        <option value="today">Hôm nay</option>
+                        <option value="yesterday">Hôm qua</option>
+                        <option value="thisWeek">Tuần này</option>
+                        <option value="lastWeek">Tuần trước</option>
+                        <option value="thisMonth" selected>Tháng này</option>
+                        <option value="lastMonth">Tháng trước</option>
+                        <option value="thisQuarter">Quý này</option>
+                        <option value="lastQuarter">Quý trước</option>
+                        <option value="6MonthsAgo">6 tháng trước</option>
+                        <option value="thisYear">Năm nay</option>
+                        <option value="lastYear">Năm trước</option>
+                        <option value="other">Khác</option>
+                    </select>
+                </div>
+                <span class="from-text-getdata">Từ</span>
+                <div class="cb-getdata from-datetime-getdata">
+                    <input type="text" class="input-get-data" />
+                </div>
+                <span class="to-text-getdata">đến</span>
+                <div class="cb-getdata to-datetime-getdata">
+                    <input type="text" class="input-get-data" />
+                </div>
+                <button class="cb-getdata btn-get-data">
+                    <div class="icon-get-data"></div>
+                    <span class="text-get-data">Lấy dữ liệu</span>
+                </button>
+            </div>
+
+            <div class="grid-dialogPurpose">
+                <table class="table-dialogPurpose">
+                    <thead>
+                        <tr>
+                            <th style="width:39px;"></th>
+                            <th style="width:150px">NGÀY</th>
+                            <th style="width:150px">SỐ CHỨNG TỪ</th>
+                            <th>CỬA HÀNG ĐIỀU CHUYỂN</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="all-button-dialogObject">
+            <div class="btn-access-dialogObject">
+                <div class="icon-access-dialogObject"></div>
+                <div class="text-access-dialogObject">
+                    <span style="color:white; font-weight:bold;font-size:12px;">Chọn</span>
+                </div>
+            </div>
+
+            <div class="btn-cancel-dialogObject btnCancelPurpose">
+                <div class="icon-cancel-dialogObject"></div>
+                <div class="text-cancel-dialogObject">
+                    <span style="color:#247ba0; font-weight:bold;font-size:13px;">Hủy bỏ</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/Scripts/Library/jquery-3.3.1.min.js"></script>
+    <script src="/Scripts/Library/jquery-ui.min.js"></script>
+    <script src="/Scripts/Library/moment.js"></script>
+    <script src="/Scripts/Library/jquery.timepicker.min.js"></script>
+    <script src="/Scripts/Common/loginHeader.js"></script>
+    <script src="/Scripts/View/Warehousing/dialog.js"></script>
+    <script src="/Scripts/View/Warehousing/warehousing.js"></script>
+</body>
+</html>

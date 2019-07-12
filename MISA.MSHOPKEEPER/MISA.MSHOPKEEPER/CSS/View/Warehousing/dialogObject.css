@@ -1,0 +1,251 @@
+﻿
+/*css dialog chọn đối tượng*/
+.main-dialog-object {
+    width: 100%;
+    height: 355px;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    padding-right: 0;
+}
+
+
+/*css phần tìm kiếm dialog*/
+.search-dialog-object {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.text-search-dialogObject {
+    width: 125px;
+    height: 32px;
+    padding-top: 6px;
+    padding-left: 8px;
+}
+
+.cb-dialogObject {
+    width: 168px;
+    height: 32px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin-right: 8px;
+}
+
+.input-dialogObject {
+    width: 347px;
+    height: 32px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin-right: 8px;
+}
+
+.btn-search-dialogObject {
+    width: 120px;
+    height: 33px;
+    border: 1px solid #026b97;
+    border-radius: 3px;
+    background-color: white;
+    display: flex;
+}
+
+.icon-search-dialogObject {
+    width: 16px;
+    height: 16px;
+    background-image: url('/Content/Icons/Search-blue.png');
+    background-repeat: no-repeat;
+    margin-top: 3px;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
+.textSearch-btn-dialogObject {
+    color: #0088c2;
+}
+
+/*css phần chính của dialog*/
+
+.grid-dialogObject {
+    width: 100%;
+    height: 290px;
+    /* margin-bottom: 8px; */
+    padding-left: 6px;
+}
+
+.header-dialogObject {
+    width: 100%;
+}
+
+.check-dialog-Object {
+    /* width: 49px !important; */
+}
+
+.object-code {
+    /* width: 149px !important; */
+}
+
+.object-name {
+    width: 178px !important;
+}
+
+.cate-object {
+    /* width: 199px !important; */
+}
+
+.address-object {
+    /* width: 199px !important; */
+}
+
+.header-dialogObject th {
+    height: 32px;
+    text-align: center
+}
+
+.theader-grid-dialogObject {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border-left: 1px solid #ddd;
+}
+
+.tbody-grid-dialogObject {
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 260px;
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    /* border-right: 1px solid #ddd; */
+}
+
+.body-dialogObject td {
+    height: 35px;
+}
+
+.txt-input-dialogObject {
+    width: 100%;
+    height: 100%;
+    padding-left: 8px;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+    .txt-input-dialogObject:focus {
+        outline: none;
+        border: 1px solid #0088c2b5;
+    }
+
+.all-button-dialogObject {
+}
+
+.btn-access-dialogObject {
+    width: 90px;
+    height: 35px;
+    border: 1px solid #026b97;
+    background-color: #026b97;
+    border-radius: 3px;
+    display: flex;
+    margin-right: 8px;
+}
+
+.icon-access-dialogObject {
+    margin-top: 8px;
+    margin-right: 8px;
+    margin-left: 8px;
+    width: 16px;
+    height: 16px;
+    background: url('/Content/Icons/common-icon.png') no-repeat -377px -127px;
+}
+
+.text-access-dialogObject {
+    margin-top: 5px;
+}
+
+.btn-access-dialogObject:hover {
+    cursor: pointer;
+    background-color: #0088c2;
+}
+
+.btn-cancel-dialogObject {
+    width: 90px;
+    height: 35px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 3px;
+    display: flex;
+}
+
+    .btn-cancel-dialogObject:hover {
+        border: 1px solid #026b97;
+        cursor: pointer;
+    }
+
+.all-button-dialogObject {
+    display: flex;
+    width: 190px;
+    float: right;
+    margin-right: 8px;
+    margin-top: 13px;
+}
+
+
+.icon-cancel-dialogObject {
+    margin-top: 8px;
+    margin-right: 8px;
+    margin-left: 8px;
+    width: 16px;
+    height: 16px;
+    background: url('/Content/Icons/common-icon.png') no-repeat -252px -127px;
+}
+
+.text-cancel-dialogObject {
+    margin-top: 5px;
+}
+
+.body-dialogObject td {
+    border: 1px solid #ddd;
+}
+
+    .body-dialogObject td:first-child {
+        border-left: 0;
+    }
+
+    .body-dialogObject td:last-child {
+        border-right: 0;
+    }
+
+.body-dialogObject td {
+    border-top: 0;
+}
+
+.theader-grid-dialogObject::-webkit-scrollbar {
+    background-color: white;
+    border-left: 1px solid #ddd;
+}
+
+
+.tbody-grid-dialogObject::-webkit-scrollbar {
+    background-color: white;
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid white;
+}
+
+.header-dialogObject tr th {
+    border: 1px solid #ddd;
+}
+
+    .header-dialogObject tr th:first-child {
+        border-left: 1px solid #f0f0f0;
+    }
+
+    .header-dialogObject tr th:last-child {
+        border-right: 1px solid #f0f0f0;
+    }
+
+.fix-border-grid {
+    width: 16px;
+    height: 1px;
+    background: white;
+    position: absolute;
+    bottom: 68px;
+    right: 0;
+}

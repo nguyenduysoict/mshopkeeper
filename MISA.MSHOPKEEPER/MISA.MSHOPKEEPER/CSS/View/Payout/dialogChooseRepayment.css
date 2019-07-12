@@ -1,0 +1,264 @@
+﻿/*
+    Description: Định dạng cho dialog chọn hóa đơn trả nợ
+    Createby: NXHUNG(9/7/2019)
+*/
+
+
+
+.paymentBillSearch {
+    width: 836px;
+    height: 558px;
+    background: #fff;
+    border: 1px solid #f0f0f0;
+}
+
+.enter-payment-invoice {
+    height: 78px;
+    width: 828px;
+    position: absolute;
+    right: auto;
+    left: 8px;
+    top: 8px;
+    margin: 0;
+}
+
+.Row-payment {
+    height: 35px;
+    display: flex;
+    margin-bottom: 8px;
+    font-family: 'Roboto',Tahoma,sans-serif !important;
+    font-size: 13px;
+}
+
+.lbl-payment {
+    width: 115px;
+    padding: 8px 5px 0 0;
+}
+
+.input-select-brand, .input-select-numberpair {
+    display: flex;
+    border: 1px solid #d0d0d0;
+    width: 291px;
+    border-radius: 3px;
+    margin-right: 15px;
+}
+
+    .input-select-brand input, .input-select-numberpair input {
+        width: 291px;
+        border: 0;
+        padding: 0 8px;
+    }
+
+    .input-select-brand .icon-arrow-down {
+        position: absolute;
+        top: 0;
+        left: 380px;
+    }
+
+.div-repayment-date {
+    width: 155px;
+    border: 1px solid #d0d0d0;
+    border-radius: 3px;
+}
+
+    .div-repayment-date input {
+        width: 153px;
+        height: 33px;
+        border: 0;
+        padding-left: 8px;
+    }
+
+    .div-repayment-date img.ui-datepicker-trigger {
+        position: absolute;
+        top: 5px;
+        right: 146px;
+    }
+
+.a-take-data {
+    width: 120px;
+    height: 35px;
+    border: 1px solid #026b97;
+    border-radius: 3px;
+    padding: 8px 25px;
+    margin-left: 10px;
+}
+    .a-take-data:hover{
+        cursor:pointer;
+    }
+
+    .a-take-data a {
+        text-decoration: none;
+        color: #026b97;
+        font-weight: 600;
+    }
+
+.data-payment {
+    width: 822px;
+    position: absolute;
+    right: auto;
+    left: 8px;
+    top: 94px;
+    margin: 0;
+    font-family: 'Roboto',Tahoma,sans-serif !important;
+    font-size: 13px;
+    border: 1px solid #d0d0d0;
+    user-select:none;
+}
+
+    .data-payment .divHeading {
+        height: 57px;
+        background: #f0f0f0;
+    }
+
+        .data-payment .divHeading .Cell {
+            padding: 19px 6px;
+        }
+
+        .data-payment .divHeading .uncheck {
+            position: absolute;
+            top: 25px;
+            left: 9px;
+        }
+
+.divbody-payment {
+    width: 820px;
+    height: 299px;
+}
+
+.Row-footer-payment {
+    background: #ffeeda !important;
+}
+
+.Row-body-payment {
+    height: 32px;
+}
+
+.Cell17 {
+    width: 39px;
+}
+.divbody-payment .Cell17{
+    padding:8px 9px !important;
+}
+.Cell18 {
+    width: 129px;
+}
+
+.Cell19 {
+    width: 138px;
+}
+
+.Cell20 {
+    width: 124px;
+}
+
+.Cell21 {
+    width: 134px;
+}
+
+.line-bottom {
+    width: 834px;
+    height: 1px;
+    background: #ddd;
+    position: absolute;
+    bottom: 55px;
+}
+
+.divbtn-dialog-chooseRepayment {
+    display: flex;
+}
+
+.pay-chooseRepayment {
+    display: flex;
+    position: absolute;
+    bottom: 8px;
+    right: 110px;
+    width: 115px;
+    height: 35px;
+    background: #026b97;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 3px;
+    padding: 8px 20px;
+    font-size: 13px;
+    font-family: 'Roboto',Tahoma,sans-serif !important;
+}
+    .pay-chooseRepayment:hover {
+        cursor: pointer;
+        background: #0088c2;
+    }
+.cancel-chooseRepayment {
+    display: flex;
+    position: absolute;
+    bottom: 8px;
+    right: 10px;
+    width: 90px;
+    height: 35px;
+    padding: 8px 10px;
+    color: #026b97;
+    font-weight: 600;
+    font-size: 13px;
+    font-family: 'Roboto',Tahoma,sans-serif !important;
+    border-radius: 3px;
+    border: 1px solid #fff;
+}
+    .cancel-chooseRepayment:hover{
+        border:1px solid #026b97;
+        cursor:pointer;
+    }
+.icon-tick {
+    background: url('/Content/Icons/common-icon.png') no-repeat;
+    background-position: -377px -127px;
+    width: 16px;
+    height: 16px;
+}
+.icon-cancel {
+    background: url('/Content/Icons/common-icon.png') no-repeat;
+    background-position: -252px -127px;
+    width: 16px;
+    height: 16px;
+}
+
+/*
+    Css cho phần bảng danh sách nhà cung cấp
+*/
+.grid-brand {
+    display:none;
+    height: 175px;
+    position: absolute;
+    top: 43px;
+    left: 123px;
+    z-index: 500;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px #ddd;
+    user-select: none;
+    font: 300 13px 'Roboto';
+}
+.grid-brand .table-hover > tbody > tr:hover {
+    background-color: #026b97;
+    color:#fff;
+}
+.grid-brand-header{
+    overflow-y:scroll;
+}
+    .grid-brand-header::-webkit-scrollbar {
+        background-color: #fff;
+    }
+.grid-brand-header th {
+    text-align: center;
+    background: #f6f6f6;
+}
+.grid-brand .grid-brand-body {
+    overflow-y: auto;
+    height: 141px;
+}
+.grid-brand table{
+    width:100%;
+}
+.grid-brand tr td{
+    padding-left:3px;
+}
+.row-select-gridbrand {
+    background-color: #5fa2dd;
+    color: #fff;
+}

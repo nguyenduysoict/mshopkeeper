@@ -1,0 +1,151 @@
+﻿
+/*css chi ttieetstrong danh mục nhập kho*/
+.grid-detail {
+    width: 100%;
+    border: 1px solid #ddd;
+    position: absolute;
+    left: 0px;
+    bottom: 0;
+    height: 303px;
+    background-color: white;
+}
+
+.title-grid-detail {
+    height: 45px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    background: #f0f0f0;
+}
+
+.main-grid-detail {
+    height: calc(100% - 85px);
+}
+
+table#tbl-grid-detail {
+    /*height: 100%;*/
+    width: 100%;
+}
+
+#tbl-grid-detail tbody tr {
+    height: 38px;
+}
+
+#tbl-grid-detail tfoot tr td {
+    height: 166px;
+    background-color: white;
+}
+
+.text-title-detail {
+    width: 62px;
+    height: 100%;
+    border-bottom: 2px solid #026b97;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.text-grid-detail {
+    font-weight: 600;
+    color: #026b97;
+}
+
+.col-text-detail {
+    width: 2px;
+    height: 32px;
+    background-color: #ddd;
+    position: absolute;
+    top: 3px;
+    left: 62px;
+}
+
+#tbl-grid-detail thead tr th {
+    text-align: center;
+    height: 32px;
+}
+
+thead {
+    background: #f0f0f0;
+}
+
+.text-bold-detailGrid {
+    font-weight: bold;
+    background-color: #ffeeda !important;
+    height: 37px;
+}
+
+#tbl-grid-detail td {
+    padding-left: 8px;
+    height: 32px;
+}
+
+.cb-getdata.from-datetime-getdata img.ui-datepicker-trigger {
+    margin-top: 7px !important;
+}
+
+.cb-getdata.to-datetime-getdata img.ui-datepicker-trigger {
+    margin-top: 7px !important;
+}
+
+
+#tbl-grid-detail tr td {
+    border: 1px solid #ddd;
+}
+
+#tbl-grid-detail tr th {
+    border: 1px solid #ddd;
+    border-top: 0;
+}
+#tbl-grid-detail tr th:first-child {
+    border-left: 1px solid #f0f0f0;
+}
+#tbl-grid-detail tr th:last-child {
+    border-right: 1px solid #f0f0f0;
+}
+#tbl-grid-detail tr td:first-child {
+    border-left: 1px solid white;
+}
+#tbl-grid-detail tr td:last-child {
+    border-right: 1px solid white;
+}
+
+.menu-item {
+    width: 157px;
+    height: 160px;
+    border: 1px solid #ddd;
+    position: absolute;
+    z-index: 2;
+    background-color: #fff;
+    border-radius: 3px;
+    display:none;
+}
+.item{
+    width:100%;
+    height:32px;
+   
+}
+
+.text-menu-item {
+    font: 400 13px Roboto;
+    line-height: 31px;
+    padding-top: 1px;
+    color: #212121;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.menu-item-two {
+    width: 122px;
+    height: 160px;
+    border: 1px solid #ddd;
+    position: absolute;
+    z-index: 2;
+    background-color: #fff;
+    border-radius: 3px;
+    display:none;
+}
+
+.item-two {
+    width: 100%;
+    height: 32px;
+}
+
+

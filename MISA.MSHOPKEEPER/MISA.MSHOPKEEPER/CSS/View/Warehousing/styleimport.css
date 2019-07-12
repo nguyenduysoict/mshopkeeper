@@ -1,0 +1,117 @@
+﻿
+
+/*
+    Description: css của phần login header
+    CreateBy: NVTIEN
+    CreateDate: 01/07/2019
+*/
+i.fa.fa-chevron-down.down-login-header {
+    padding-top: 8px;
+}
+
+.name-login-header:hover {
+    cursor: pointer;
+}
+
+.content-grid {
+    position: absolute;
+    top: 8px;
+    bottom: 8px;
+    left: 8px;
+    right: 8px;
+    /*border: 1px solid #808080;*/
+}
+
+
+/*.logo-header {
+    width: 140px;
+    background-color: #006189;
+    color: #fff;
+    text-align: center;
+    padding-top: 13px;
+}
+
+
+.info-header {
+    width: calc(100% - 140px);
+    display: flex;
+}
+
+
+
+.name-title-header {
+    max-width: 117px;
+    padding-top: 15px;
+    padding-left: 17px;
+}
+
+    .name-title-header span {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+.user-header {
+    width: 1515px;
+    display: flex;
+    height: 100%;
+}
+
+.user-login-header {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.username-header {
+    width: 162px;
+    height: 32px;
+    display: flex;
+    background-color: #fff;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 32px;
+    margin-right: 15px;
+}
+
+.name-login-header {
+    display: flex;
+    width: 191px;
+    height: 32px;
+    background-color: #fff;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    font-size: 13px;
+    font-weight: 300;
+}
+    
+    #img-login-header {
+        width: 28px;
+        height: 28px;
+    }
+
+.username-header span {
+    margin-left: 40px;
+}
+
+img#img-login-header {
+    margin: 0 3px 0 0;
+}
+
+#one-user-header {
+    padding: 8px 11px 0 5px;
+}
+
+
+.help-header {
+    padding-top: 15px;
+    margin-left: 15px;
+}
+
+.text-help-header {
+    color: #027488;
+}*/
+
+

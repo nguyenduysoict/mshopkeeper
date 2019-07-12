@@ -1,0 +1,43 @@
+﻿
+/*css bảng chi tiết nhân viên*/
+.detail-export-text {
+    color: gray;
+    background-color: white;
+    height: 35px;
+    display: flex;
+    align-items: center;
+}
+
+    .detail-export-text div {
+        width: 75px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 2px solid #026b97;
+    }
+
+.detail-export {
+    background-color: #f6f6f6;
+    height: 100%;
+    overflow: auto;
+}
+
+    .detail-export table thead {
+        background-color: #f0f0f0;
+    }
+
+    .detail-export table tbody tr:hover {
+        background-color: #ECF0F4;
+    }
+
+    .detail-export table tbody tr td {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .detail-export table thead > tr:first-child th {
+        height: 32px;
+        white-space: nowrap;
+    }

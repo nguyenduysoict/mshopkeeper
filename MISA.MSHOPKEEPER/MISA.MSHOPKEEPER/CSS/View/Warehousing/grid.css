@@ -1,0 +1,269 @@
+﻿/*
+    Css cho phần nội dung
+   CreateBY: NVTIEN
+*/
+
+
+.content-grid {
+    margin: 8px;
+    position: absolute;
+    top: 8px;
+    bottom: 8px;
+    left: 8px;
+    right: 8px;
+}
+
+.table-grid {
+    display: table;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+}
+
+    .table-grid .table-thead-grid {
+        display: table-row;
+        border-bottom-width: 1px;
+        text-align: center;
+        /* font-weight: bold; */
+    }
+
+        .table-grid .table-thead-grid .Cell {
+            border-bottom-width: 1px;
+        }
+
+.table-thead-grid .Cell {
+    height: 33px;
+}
+
+
+
+.grid {
+    height: calc(100% - 304px);
+    /* margin-top: 0px; */
+    width: 100%;
+}
+
+    .grid .cell-item {
+        padding: 6px 7px;
+    }
+
+    .grid::-webkit-scrollbar {
+        width: 0px;
+    }
+
+
+.grid-icon {
+    width: 20px;
+    height: 26px;
+    margin-right: 8px;
+    background-image: url('/Content/Icons/common-icon.png');
+}
+
+.row-selected {
+    background-color: #d9edf7 !important;
+}
+
+.checked {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-image: url(/Content/Icons/common-icon.png);
+    background-position: -1px -321px;
+}
+
+.uncheck {
+    width: 16px;
+    height: 16px;
+    background-image: url(/Content/Icons/common-icon.png);
+    background-position: -1px -321px;
+}
+
+#checkall {
+    position: absolute;
+    top: 120px;
+    left: 8px;
+}
+
+.Cell1 {
+    width: 39px;
+}
+
+.Cell2 {
+    width: 149px;
+}
+
+.Cell3 {
+    width: 149px;
+}
+
+.Cell4 {
+    width: 149px !important;
+}
+
+.Cell5 {
+    width: 825px;
+}
+
+.text-th {
+    height: 32px;
+    padding: 7px 10px 6px;
+    font-weight: bold;
+}
+
+.div-row-input {
+    display: flex;
+}
+
+.icon-filter {
+    height: 16px;
+    width: 16px;
+    margin: 7px;
+}
+
+.box-filter {
+    border-right: 1px solid #ddd;
+    width: 34px;
+    height: 35px;
+    background: #fff;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.box-filter {
+}
+
+
+
+.dropdown-icon {
+    width: 16px;
+    height: 16px;
+    padding: 4px 13px;
+}
+
+.box-input {
+    /* padding: 5px 10px; */
+    background: #fff;
+    height: 35px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.box-input1 {
+    width: 112px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.box-input2 {
+    width: 114px;
+}
+
+.box-input3 {
+    width: 247px;
+    display: flex;
+}
+
+.box-input4 {
+    width: 159px;
+}
+
+.box-inpput5 {
+    width: 100%;
+}
+
+.box-input {
+    width: 100%;
+    display: flex;
+}
+
+input#vouchercode {
+    width: 114px;
+    /* height: 100%; */
+    border: #fff;
+}
+
+
+input#vouchercategory {
+    width: 205px;
+    border: #fff;
+}
+
+input#total {
+    width: 114px;
+    border: #fff;
+}
+
+input#object {
+    width: 100%;
+    border: #fff
+}
+
+input#reason {
+    width: 100%;
+    border: #fff
+}
+
+#scroll-body {
+    overflow-y: auto;
+    height: 312px;
+}
+
+#div-footer {
+    background: #ffeeda;
+}
+
+.divResizable {
+    height: 10px;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+
+.table-grid .row-table-grid:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}
+
+.table-grid .row-table-grid {
+    display: table-row;
+}
+
+.row-table-grid .Cell {
+    height: 33px;
+    padding: 8px;
+}
+
+.table-grid .Cell {
+    display: table-cell;
+    border: 1px solid #ddd;
+    border-width: thin;
+    /* padding: 0; */
+    margin: 0;
+}
+
+
+.row-table-grid:hover {
+    background-color: #d8e6ec !important;
+}
+
+.row-table-grid {
+    user-select: none;
+}
+
+.box-filter:hover {
+    cursor: pointer;
+}
+
+.box-filter.icon-down {
+    margin-right: 16px;
+}
+
+.col-collumns-right {
+    width: 1px;
+    height: 34px;
+    position: absolute;
+    right: 17px;
+    top: 96px;
+    background: #ddd;
+}

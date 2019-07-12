@@ -1,0 +1,144 @@
+﻿.main-dialogProduct {
+    width: 100%;
+    height: 621px;
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+}
+
+.search-dialog-product {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.text-search-dialogProduct {
+    width: 125px;
+    height: 32px;
+    padding-top: 6px;
+}
+
+.cb-dialogProduct {
+    width: 168px;
+    height: 32px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin-right: 8px;
+}
+
+
+/*css của dialog chọn hàng hóa*/
+
+/*css phần tìm kiếm của dialog*/
+.input-dialogProduct {
+    width: 491px;
+    height: 32px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin-right: 8px;
+}
+
+.txt-input-dialogProduct {
+    width: 100%;
+    height: 100%;
+    padding-left: 8px;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+.btn-search-dialogProduct {
+    width: 120px;
+    height: 33px;
+    border: 1px solid #026b97;
+    border-radius: 3px;
+    background-color: white;
+    display: flex;
+}
+
+
+.icon-search-dialogProduct {
+    width: 16px;
+    height: 16px;
+    background-image: url(/Content/Icons/Search-blue.png);
+    background-repeat: no-repeat;
+    margin-top: 3px;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
+.textSearch-btn-dialogProduct {
+    color: #0088c2;
+}
+
+.total-dialog-product {
+    color: #0088c2;
+    width: 100%;
+    line-height: 15px;
+}
+
+/*css phần bảng chính strong dialog*/
+
+.grid-Product {
+    margin-top: 8px;
+    width: 100%;
+    height: 492px;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.table-grid-Product {
+    width: 100%;
+}
+
+    .table-grid-Product thead {
+        background-color: #f0f0f0;
+    }
+
+    .table-grid-Product tr th {
+        border: 1px solid #ddd;
+        height: 35px;
+        text-align: center;
+    }
+
+    .table-grid-Product tr td {
+        height: 35px;
+        border: 1px solid #ddd;
+    }
+
+    .table-grid-Product tr th:first-child {
+        border-left: 1px solid #f0f0f0;
+    }
+
+    .table-grid-Product tr td:first-child {
+        border-left: 1px solid white;
+    }
+
+    .table-grid-Product tr th:last-child {
+        border-right: 1px solid #f0f0f0;
+    }
+
+    .table-grid-Product tr td:last-child {
+        border-right: 1px solid white;
+    }
+
+.sku-code-dialogProduct {
+    width: 300px;
+}
+
+.product-name-dialogProduct {
+    width: 250px;
+}
+
+.group-product-dialogProduct {
+    width: 250px;
+}
+
+.unit-dialogProduct {
+}
+
+.pagination-dialogProduct {
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    height: 45px !important;
+}
